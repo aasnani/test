@@ -1,3 +1,25 @@
+MN_Map.html
+A
+A
+
+Type
+HTML
+Size
+125 KB (128,150 bytes)
+Storage used
+126 KB (128,913 bytes)
+Location
+Output
+Owner
+me
+Modified
+3:33 AM by me
+Opened
+3:42 AM by me
+Created
+Mar 27, 2021 with Google Drive for desktop
+Add a description
+Viewers can download
 <html>
 <head>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
@@ -9,6 +31,2273 @@
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 13,
             center: new google.maps.LatLng(46.729553, -94.685900)
+        });
+
+        var marker_icon_FF0000 = {
+            url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAiCAYAAACwaJKDAAAABmJLR0QA/wD/AP+gvaeTAAACBklEQVRIia3VzUtUURgH4GdG/AiyZZShtWgXUbSIFtGqRYtqWRLhXyBYf0K6MaJQ2gRtayHtijYpleHKSCgIcRHoIiOSKEzLKea0OOeqTfPlzPzg5Qwz9zz3nXPvPTeneo7gNA4gjyI+Ygbva8z9L2cxi9BHOE+4msY+gliz6biayWE0R7GfMEcoEkJJzRH6CbnY+WiaVxEc6yY8KQOVq8eE7tj1WCV4qIswUyeY1QyhK8JDpWAP1m7vEMzqTkTXkrOZkYOEQoNogXAowiPE2wQuDqC9nktZJu0YSE72XRs2phrsMqup2OkG2vLpRB19DXaZJc3vQHv294Um0e3z8yigsNQkmuYXUMie5/npJtE0fz55YLiXsNHELdUbV2B4+4n2Y/Vmg+itCK4m558MdhBe7hCcJnRGdLDS0ox3E17XCb4h7IngeLX1zuFhD2G5BriytY4Tqmx9WXbh3Tnl99KsLkdwAbtrgVmO4/eDCuCkzd3/TL1glru9hF8lYJFwMoKPdgrCXqzfL0GfR7CIo42gcO9YCXopolONgnAC4W0Cv9l8dVxpBoWFGwmdiOC6Glc8X+3HlKeT6cOzOLzAjyaaBBc602ZzOHZ6vVkQ9kl7Qi6ip1qBwpdrEfwjPnFVU8+awuKrOC7hZ6vQlQ9baM3Ui379HsfVVqKf07jcSvRTGhfrOfgvIP3ECS77BDoAAAAASUVORK5CYII=",
+            labelOrigin: new google.maps.Point(10, 11)
+        };
+
+        var info_marker_0 = new google.maps.Marker({
+            position: new google.maps.LatLng(46.618543, -93.453669),
+            title: "AITKIN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_0 = new google.maps.InfoWindow({
+            content: '<ul><li>County: AITKIN</li><li>Total Cases: 1159</li><li>Total Deaths: 33</li><li>ccvi: 0.138490926</li><li>socioeconomic: 0.24196115899999998</li><li>minority_language: 0.134988857</li><li>household_transportation: 0.459089462</li><li>epidemiological: 0.49156319600000004</li><li>healthcare: 0.277936963</li><li>highrisk: 0.463865011</li><li>population: 0.16491563199999998</li><li>One Dose: 3738</li><li>Completed: 2029</li><li>NEVER: 18.7</li><li>RARELY: 11.5</li><li>SOMETIMES: 7.5</li><li>FREQUENTLY: 24.7</li><li>ALWAYS: 37.5</li><li>Population Count:  15,870 </li><li>Cases Per 1000: 73.03087586641462</li><li>One Dose Per 1000: 235.53875236294897</li></ul>'
+        });
+        
+        info_marker_0.addListener('click', function() {
+            info_window_0.open(map, info_marker_0);
+        });
+
+        var info_marker_1 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.329283, -93.219701),
+            title: "ANOKA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_1 = new google.maps.InfoWindow({
+            content: '<ul><li>County: ANOKA</li><li>Total Cases: 32718</li><li>Total Deaths: 380</li><li>ccvi: 0.29194524</li><li>socioeconomic: 0.045208532</li><li>minority_language: 0.666348297</li><li>household_transportation: 0.157593123</li><li>epidemiological: 0.042024833</li><li>healthcare: 0.735116205</li><li>highrisk: 0.259153136</li><li>population: 0.9458771090000001</li><li>One Dose: 39890</li><li>Completed: 19907</li><li>NEVER: 5.4</li><li>RARELY: 7.8</li><li>SOMETIMES: 13.200000000000001</li><li>FREQUENTLY: 24.5</li><li>ALWAYS: 49.2</li><li>Population Count:  362,648 </li><li>Cases Per 1000: 90.21971719132603</li><li>One Dose Per 1000: 109.99647040656504</li></ul>'
+        });
+        
+        info_marker_1.addListener('click', function() {
+            info_window_1.open(map, info_marker_1);
+        });
+
+        var info_marker_2 = new google.maps.Marker({
+            position: new google.maps.LatLng(46.916463, -95.703656),
+            title: "BECKER",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_2 = new google.maps.InfoWindow({
+            content: '<ul><li>County: BECKER</li><li>Total Cases: 3027</li><li>Total Deaths: 41</li><li>ccvi: 0.266475645</li><li>socioeconomic: 0.190066858</li><li>minority_language: 0.315822986</li><li>household_transportation: 0.522763451</li><li>epidemiological: 0.219038523</li><li>healthcare: 0.39350525299999994</li><li>highrisk: 0.772683859</li><li>population: 0.345749761</li><li>One Dose: 7937</li><li>Completed: 3615</li><li>NEVER: 5.2</li><li>RARELY: 28.000000000000004</li><li>SOMETIMES: 17.5</li><li>FREQUENTLY: 24.0</li><li>ALWAYS: 25.2</li><li>Population Count:  34,545 </li><li>Cases Per 1000: 87.62483716891012</li><li>One Dose Per 1000: 229.7582862932407</li></ul>'
+        });
+        
+        info_marker_2.addListener('click', function() {
+            info_window_2.open(map, info_marker_2);
+        });
+
+        var info_marker_3 = new google.maps.Marker({
+            position: new google.maps.LatLng(48.037004, -94.828924),
+            title: "BELTRAMI",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_3 = new google.maps.InfoWindow({
+            content: '<ul><li>County: BELTRAMI</li><li>Total Cases: 3322</li><li>Total Deaths: 48</li><li>ccvi: 0.381088825</li><li>socioeconomic: 0.555237186</li><li>minority_language: 0.40146450200000006</li><li>household_transportation: 0.9481056990000001</li><li>epidemiological: 0.05794333</li><li>healthcare: 0.5963069089999999</li><li>highrisk: 0.35370901</li><li>population: 0.265202165</li><li>One Dose: 10090</li><li>Completed: 5156</li><li>NEVER: 9.4</li><li>RARELY: 15.5</li><li>SOMETIMES: 22.5</li><li>FREQUENTLY: 18.5</li><li>ALWAYS: 34.0</li><li>Population Count:  47,184 </li><li>Cases Per 1000: 70.40522210918955</li><li>One Dose Per 1000: 213.84367582231263</li></ul>'
+        });
+        
+        info_marker_3.addListener('click', function() {
+            info_window_3.open(map, info_marker_3);
+        });
+
+        var info_marker_4 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.721106, -93.973286),
+            title: "BENTON",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_4 = new google.maps.InfoWindow({
+            content: '<ul><li>County: BENTON</li><li>Total Cases: 4393</li><li>Total Deaths: 90</li><li>ccvi: 0.515440942</li><li>socioeconomic: 0.085641515</li><li>minority_language: 0.324737345</li><li>household_transportation: 0.779687997</li><li>epidemiological: 0.035339063999999996</li><li>healthcare: 0.857370264</li><li>highrisk: 0.792104425</li><li>population: 0.7128303090000001</li><li>One Dose: 4562</li><li>Completed: 2934</li><li>NEVER: 8.4</li><li>RARELY: 13.900000000000002</li><li>SOMETIMES: 20.9</li><li>FREQUENTLY: 14.7</li><li>ALWAYS: 42.0</li><li>Population Count:  40,895 </li><li>Cases Per 1000: 107.42144516444553</li><li>One Dose Per 1000: 111.5539797041203</li></ul>'
+        });
+        
+        info_marker_4.addListener('click', function() {
+            info_window_4.open(map, info_marker_4);
+        });
+
+        var info_marker_5 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.493204, -96.472400),
+            title: "BIG STONE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_5 = new google.maps.InfoWindow({
+            content: '<ul><li>County: BIG STONE</li><li>Total Cases: 498</li><li>Total Deaths: 3</li><li>ccvi: 0.048392232</li><li>socioeconomic: 0.131168418</li><li>minority_language: 0.158866603</li><li>household_transportation: 0.347659981</li><li>epidemiological: 0.489016237</li><li>healthcare: 0.242916269</li><li>highrisk: 0.044253422</li><li>population: 0.18433619899999998</li><li>One Dose: 1457</li><li>Completed: 881</li><li>NEVER: 25.6</li><li>RARELY: 12.1</li><li>SOMETIMES: 18.5</li><li>FREQUENTLY: 14.6</li><li>ALWAYS: 29.2</li><li>Population Count:  4,993 </li><li>Cases Per 1000: 99.73963548968557</li><li>One Dose Per 1000: 291.80853194472263</li></ul>'
+        });
+        
+        info_marker_5.addListener('click', function() {
+            info_window_5.open(map, info_marker_5);
+        });
+
+        var info_marker_6 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.950513, -93.987843),
+            title: "BLUE EARTH",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_6 = new google.maps.InfoWindow({
+            content: '<ul><li>County: BLUE EARTH</li><li>Total Cases: 5790</li><li>Total Deaths: 34</li><li>ccvi: 0.252467367</li><li>socioeconomic: 0.186564788</li><li>minority_language: 0.42470550799999995</li><li>household_transportation: 0.34065584200000004</li><li>epidemiological: 0.012098058</li><li>healthcare: 0.540273798</li><li>highrisk: 0.52690226</li><li>population: 0.6911811520000001</li><li>One Dose: 10788</li><li>Completed: 5510</li><li>NEVER: 6.5</li><li>RARELY: 7.8</li><li>SOMETIMES: 14.6</li><li>FREQUENTLY: 27.6</li><li>ALWAYS: 43.5</li><li>Population Count:  68,583 </li><li>Cases Per 1000: 84.42325357595907</li><li>One Dose Per 1000: 157.29845588556933</li></ul>'
+        });
+        
+        info_marker_6.addListener('click', function() {
+            info_window_6.open(map, info_marker_6);
+        });
+
+        var info_marker_7 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.229438, -94.645035),
+            title: "BROWN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_7 = new google.maps.InfoWindow({
+            content: '<ul><li>County: BROWN</li><li>Total Cases: 2369</li><li>Total Deaths: 37</li><li>ccvi: 0.103470232</li><li>socioeconomic: 0.011461318</li><li>minority_language: 0.267430755</li><li>household_transportation: 0.18751989800000002</li><li>epidemiological: 0.139446036</li><li>healthcare: 0.23686724</li><li>highrisk: 0.721426297</li><li>population: 0.477873289</li><li>One Dose: 4676</li><li>Completed: 2081</li><li>NEVER: 10.1</li><li>RARELY: 6.1</li><li>SOMETIMES: 25.1</li><li>FREQUENTLY: 26.5</li><li>ALWAYS: 32.2</li><li>Population Count:  25,119 </li><li>Cases Per 1000: 94.3110792627095</li><li>One Dose Per 1000: 186.1539074007723</li></ul>'
+        });
+        
+        info_marker_7.addListener('click', function() {
+            info_window_7.open(map, info_marker_7);
+        });
+
+        var info_marker_8 = new google.maps.Marker({
+            position: new google.maps.LatLng(46.561925, -92.684723),
+            title: "CARLTON",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_8 = new google.maps.InfoWindow({
+            content: '<ul><li>County: CARLTON</li><li>Total Cases: 2969</li><li>Total Deaths: 43</li><li>ccvi: 0.130850048</li><li>socioeconomic: 0.05953518</li><li>minority_language: 0.215218083</li><li>household_transportation: 0.636103152</li><li>epidemiological: 0.099013053</li><li>healthcare: 0.548551417</li><li>highrisk: 0.15663801300000002</li><li>population: 0.478191659</li><li>One Dose: 8844</li><li>Completed: 4922</li><li>NEVER: 5.8</li><li>RARELY: 5.4</li><li>SOMETIMES: 9.0</li><li>FREQUENTLY: 32.9</li><li>ALWAYS: 46.9</li><li>Population Count:  35,935 </li><li>Cases Per 1000: 82.62139974954779</li><li>One Dose Per 1000: 246.11103381104775</li></ul>'
+        });
+        
+        info_marker_8.addListener('click', function() {
+            info_window_8.open(map, info_marker_8);
+        });
+
+        var info_marker_9 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.825431, -93.784150),
+            title: "CARVER",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_9 = new google.maps.InfoWindow({
+            content: '<ul><li>County: CARVER</li><li>Total Cases: 7466</li><li>Total Deaths: 40</li><li>ccvi: 0.149952245</li><li>socioeconomic: 0.009551098000000001</li><li>minority_language: 0.34988857100000004</li><li>household_transportation: 0.040114613</li><li>epidemiological: 0.030245145</li><li>healthcare: 0.737344795</li><li>highrisk: 0.246736708</li><li>population: 0.8650111429999999</li><li>One Dose: 15207</li><li>Completed: 6547</li><li>NEVER: 2.4</li><li>RARELY: 12.8</li><li>SOMETIMES: 18.3</li><li>FREQUENTLY: 29.600000000000005</li><li>ALWAYS: 36.8</li><li>Population Count:  107,179 </li><li>Cases Per 1000: 69.65916830722436</li><li>One Dose Per 1000: 141.88413775086536</li></ul>'
+        });
+        
+        info_marker_9.addListener('click', function() {
+            info_window_9.open(map, info_marker_9);
+        });
+
+        var info_marker_10 = new google.maps.Marker({
+            position: new google.maps.LatLng(47.214454, -94.230917),
+            title: "CASS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_10 = new google.maps.InfoWindow({
+            content: '<ul><li>County: CASS</li><li>Total Cases: 2159</li><li>Total Deaths: 24</li><li>ccvi: 0.203438395</li><li>socioeconomic: 0.382043935</li><li>minority_language: 0.276981853</li><li>household_transportation: 0.510347023</li><li>epidemiological: 0.35434575</li><li>healthcare: 0.490608087</li><li>highrisk: 0.264883795</li><li>population: 0.227634511</li><li>One Dose: 5365</li><li>Completed: 2909</li><li>NEVER: 10.5</li><li>RARELY: 12.7</li><li>SOMETIMES: 10.7</li><li>FREQUENTLY: 23.5</li><li>ALWAYS: 42.6</li><li>Population Count:  29,754 </li><li>Cases Per 1000: 72.56167238018418</li><li>One Dose Per 1000: 180.3118908382066</li></ul>'
+        });
+        
+        info_marker_10.addListener('click', function() {
+            info_window_10.open(map, info_marker_10);
+        });
+
+        var info_marker_11 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.052004, -95.555641),
+            title: "CHIPPEWA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_11 = new google.maps.InfoWindow({
+            content: '<ul><li>County: CHIPPEWA</li><li>Total Cases: 1354</li><li>Total Deaths: 35</li><li>ccvi: 0.241642789</li><li>socioeconomic: 0.181789239</li><li>minority_language: 0.610633556</li><li>household_transportation: 0.40273798200000005</li><li>epidemiological: 0.209805794</li><li>healthcare: 0.283667622</li><li>highrisk: 0.699777141</li><li>population: 0.2913085</li><li>One Dose: 2522</li><li>Completed: 1072</li><li>NEVER: 10.8</li><li>RARELY: 10.6</li><li>SOMETIMES: 24.4</li><li>FREQUENTLY: 22.4</li><li>ALWAYS: 31.8</li><li>Population Count:  11,858 </li><li>Cases Per 1000: 114.18451678191937</li><li>One Dose Per 1000: 212.68342047562828</li></ul>'
+        });
+        
+        info_marker_11.addListener('click', function() {
+            info_window_11.open(map, info_marker_11);
+        });
+
+        var info_marker_12 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.524828, -92.955031),
+            title: "CHISAGO",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_12 = new google.maps.InfoWindow({
+            content: '<ul><li>County: CHISAGO</li><li>Total Cases: 4872</li><li>Total Deaths: 44</li><li>ccvi: 0.09996816300000001</li><li>socioeconomic: 0.042024833</li><li>minority_language: 0.108564152</li><li>household_transportation: 0.18274434899999997</li><li>epidemiological: 0.062082139</li><li>healthcare: 0.668258516</li><li>highrisk: 0.195797517</li><li>population: 0.76599809</li><li>One Dose: 7843</li><li>Completed: 3595</li><li>NEVER: 6.4</li><li>RARELY: 10.4</li><li>SOMETIMES: 16.5</li><li>FREQUENTLY: 25.3</li><li>ALWAYS: 41.4</li><li>Population Count:  56,613 </li><li>Cases Per 1000: 86.05797255047428</li><li>One Dose Per 1000: 138.5370851217918</li></ul>'
+        });
+        
+        info_marker_12.addListener('click', function() {
+            info_window_12.open(map, info_marker_12);
+        });
+
+        var info_marker_13 = new google.maps.Marker({
+            position: new google.maps.LatLng(46.878186, -96.425759),
+            title: "CLAY",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_13 = new google.maps.InfoWindow({
+            content: '<ul><li>County: CLAY</li><li>Total Cases: 6768</li><li>Total Deaths: 84</li><li>ccvi: 0.219675263</li><li>socioeconomic: 0.027379815</li><li>minority_language: 0.406240051</li><li>household_transportation: 0.428207577</li><li>epidemiological: 0.012734798</li><li>healthcare: 0.866921363</li><li>highrisk: 0.25692454600000003</li><li>population: 0.5889844</li><li>One Dose: 9620</li><li>Completed: 4887</li><li>NEVER: 9.2</li><li>RARELY: 12.1</li><li>SOMETIMES: 13.8</li><li>FREQUENTLY: 23.0</li><li>ALWAYS: 41.9</li><li>Population Count:  64,591 </li><li>Cases Per 1000: 104.78240002477125</li><li>One Dose Per 1000: 148.9371584276447</li></ul>'
+        });
+        
+        info_marker_13.addListener('click', function() {
+            info_window_13.open(map, info_marker_13);
+        });
+
+        var info_marker_14 = new google.maps.Marker({
+            position: new google.maps.LatLng(47.720079, -95.310566),
+            title: "CLEARWATER",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_14 = new google.maps.InfoWindow({
+            content: '<ul><li>County: CLEARWATER</li><li>Total Cases: 707</li><li>Total Deaths: 14</li><li>ccvi: 0.35243553</li><li>socioeconomic: 0.747851003</li><li>minority_language: 0.4110156</li><li>household_transportation: 0.9019420570000001</li><li>epidemiological: 0.308500478</li><li>healthcare: 0.283030882</li><li>highrisk: 0.24259789899999998</li><li>population: 0.166825852</li><li>One Dose: 1688</li><li>Completed: 873</li><li>NEVER: 6.5</li><li>RARELY: 21.0</li><li>SOMETIMES: 20.3</li><li>FREQUENTLY: 17.2</li><li>ALWAYS: 35.1</li><li>Population Count:  8,808 </li><li>Cases Per 1000: 80.2679382379655</li><li>One Dose Per 1000: 191.6439600363306</li></ul>'
+        });
+        
+        info_marker_14.addListener('click', function() {
+            info_window_14.open(map, info_marker_14);
+        });
+
+        var info_marker_15 = new google.maps.Marker({
+            position: new google.maps.LatLng(47.605106, -90.493177),
+            title: "COOK",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_15 = new google.maps.InfoWindow({
+            content: '<ul><li>County: COOK</li><li>Total Cases: 118</li><li>Total Deaths: 0</li><li>ccvi: 0.047755492000000004</li><li>socioeconomic: 0.101560013</li><li>minority_language: 0.244189748</li><li>household_transportation: 0.497930595</li><li>epidemiological: 0.462591531</li><li>healthcare: 0.127666348</li><li>highrisk: 0.068449538</li><li>population: 0.088825215</li><li>One Dose: 2236</li><li>Completed: 1212</li><li>NEVER: 18.4</li><li>RARELY: 2.0</li><li>SOMETIMES: 3.8</li><li>FREQUENTLY: 25.7</li><li>ALWAYS: 50.0</li><li>Population Count:  5,462 </li><li>Cases Per 1000: 21.603808128890513</li><li>One Dose Per 1000: 409.37385573050165</li></ul>'
+        });
+        
+        info_marker_15.addListener('click', function() {
+            info_window_15.open(map, info_marker_15);
+        });
+
+        var info_marker_16 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.048869, -95.310250),
+            title: "COTTONWOOD",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_16 = new google.maps.InfoWindow({
+            content: '<ul><li>County: COTTONWOOD</li><li>Total Cases: 1329</li><li>Total Deaths: 20</li><li>ccvi: 0.204393505</li><li>socioeconomic: 0.147723655</li><li>minority_language: 0.625278574</li><li>household_transportation: 0.33747214299999995</li><li>epidemiological: 0.300222859</li><li>healthcare: 0.277618593</li><li>highrisk: 0.564151544</li><li>population: 0.260108246</li><li>One Dose: 2551</li><li>Completed: 984</li><li>NEVER: 21.6</li><li>RARELY: 4.5</li><li>SOMETIMES: 26.200000000000003</li><li>FREQUENTLY: 21.5</li><li>ALWAYS: 26.3</li><li>Population Count:  11,216 </li><li>Cases Per 1000: 118.49144079885878</li><li>One Dose Per 1000: 227.44293865905848</li></ul>'
+        });
+        
+        info_marker_16.addListener('click', function() {
+            info_window_16.open(map, info_marker_16);
+        });
+
+        var info_marker_17 = new google.maps.Marker({
+            position: new google.maps.LatLng(46.595799, -94.140170),
+            title: "CROW WING",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_17 = new google.maps.InfoWindow({
+            content: '<ul><li>County: CROW WING</li><li>Total Cases: 5115</li><li>Total Deaths: 80</li><li>ccvi: 0.074498567</li><li>socioeconomic: 0.052531040999999994</li><li>minority_language: 0.06749442900000001</li><li>household_transportation: 0.258834766</li><li>epidemiological: 0.148997135</li><li>healthcare: 0.22922636100000002</li><li>highrisk: 0.450811843</li><li>population: 0.605539637</li><li>One Dose: 11402</li><li>Completed: 7422</li><li>NEVER: 14.7</li><li>RARELY: 11.2</li><li>SOMETIMES: 8.1</li><li>FREQUENTLY: 24.9</li><li>ALWAYS: 41.1</li><li>Population Count:  65,274 </li><li>Cases Per 1000: 78.36198179979777</li><li>One Dose Per 1000: 174.679045255385</li></ul>'
+        });
+        
+        info_marker_17.addListener('click', function() {
+            info_window_17.open(map, info_marker_17);
+        });
+
+        var info_marker_18 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.731554, -93.177966),
+            title: "DAKOTA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_18 = new google.maps.InfoWindow({
+            content: '<ul><li>County: DAKOTA</li><li>Total Cases: 35365</li><li>Total Deaths: 380</li><li>ccvi: 0.264883795</li><li>socioeconomic: 0.041069722999999995</li><li>minority_language: 0.70678128</li><li>household_transportation: 0.12289079900000001</li><li>epidemiological: 0.026106336</li><li>healthcare: 0.7669531999999999</li><li>highrisk: 0.153454314</li><li>population: 0.93919134</li><li>One Dose: 58245</li><li>Completed: 27656</li><li>NEVER: 7.200000000000001</li><li>RARELY: 7.6</li><li>SOMETIMES: 12.9</li><li>FREQUENTLY: 23.6</li><li>ALWAYS: 48.8</li><li>Population Count:  433,302 </li><li>Cases Per 1000: 81.61744003027911</li><li>One Dose Per 1000: 134.42125815251256</li></ul>'
+        });
+        
+        info_marker_18.addListener('click', function() {
+            info_window_18.open(map, info_marker_18);
+        });
+
+        var info_marker_19 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.984289, -92.857710),
+            title: "DODGE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_19 = new google.maps.InfoWindow({
+            content: '<ul><li>County: DODGE</li><li>Total Cases: 1501</li><li>Total Deaths: 4</li><li>ccvi: 0.078319007</li><li>socioeconomic: 0.010824578</li><li>minority_language: 0.324418975</li><li>household_transportation: 0.13212352800000002</li><li>epidemiological: 0.046800382</li><li>healthcare: 0.677491245</li><li>highrisk: 0.13912766599999998</li><li>population: 0.517987902</li><li>One Dose: 4054</li><li>Completed: 2643</li><li>NEVER: 3.5000000000000004</li><li>RARELY: 9.6</li><li>SOMETIMES: 7.1</li><li>FREQUENTLY: 32.5</li><li>ALWAYS: 47.3</li><li>Population Count:  20,943 </li><li>Cases Per 1000: 71.67072530201021</li><li>One Dose Per 1000: 193.5730315618584</li></ul>'
+        });
+        
+        info_marker_19.addListener('click', function() {
+            info_window_19.open(map, info_marker_19);
+        });
+
+        var info_marker_20 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.927939, -95.421881),
+            title: "DOUGLAS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_20 = new google.maps.InfoWindow({
+            content: '<ul><li>County: DOUGLAS</li><li>Total Cases: 3877</li><li>Total Deaths: 68</li><li>ccvi: 0.063037249</li><li>socioeconomic: 0.024832856</li><li>minority_language: 0.076408787</li><li>household_transportation: 0.075453677</li><li>epidemiological: 0.162687042</li><li>healthcare: 0.23209169100000002</li><li>highrisk: 0.554918816</li><li>population: 0.581343521</li><li>One Dose: 8541</li><li>Completed: 4893</li><li>NEVER: 9.9</li><li>RARELY: 17.8</li><li>SOMETIMES: 14.800000000000002</li><li>FREQUENTLY: 22.5</li><li>ALWAYS: 35.0</li><li>Population Count:  38,220 </li><li>Cases Per 1000: 101.43903715332286</li><li>One Dose Per 1000: 223.46938775510202</li></ul>'
+        });
+        
+        info_marker_20.addListener('click', function() {
+            info_window_20.open(map, info_marker_20);
+        });
+
+        var info_marker_21 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.644877, -93.987843),
+            title: "FARIBAULT",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_21 = new google.maps.InfoWindow({
+            content: '<ul><li>County: FARIBAULT</li><li>Total Cases: 1198</li><li>Total Deaths: 16</li><li>ccvi: 0.11747851</li><li>socioeconomic: 0.113339701</li><li>minority_language: 0.284941102</li><li>household_transportation: 0.21012416399999997</li><li>epidemiological: 0.309455587</li><li>healthcare: 0.271251194</li><li>highrisk: 0.64469914</li><li>population: 0.276981853</li><li>One Dose: 2343</li><li>Completed: 950</li><li>NEVER: 7.8</li><li>RARELY: 15.8</li><li>SOMETIMES: 16.3</li><li>FREQUENTLY: 26.1</li><li>ALWAYS: 34.0</li><li>Population Count:  13,580 </li><li>Cases Per 1000: 88.2179675994109</li><li>One Dose Per 1000: 172.53313696612665</li></ul>'
+        });
+        
+        info_marker_21.addListener('click', function() {
+            info_window_21.open(map, info_marker_21);
+        });
+
+        var info_marker_22 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.695630, -92.066520),
+            title: "FILLMORE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_22 = new google.maps.InfoWindow({
+            content: '<ul><li>County: FILLMORE</li><li>Total Cases: 1355</li><li>Total Deaths: 8</li><li>ccvi: 0.156319643</li><li>socioeconomic: 0.196115887</li><li>minority_language: 0.305953518</li><li>household_transportation: 0.416746259</li><li>epidemiological: 0.196434257</li><li>healthcare: 0.481375358</li><li>highrisk: 0.385864374</li><li>population: 0.330786374</li><li>One Dose: 5117</li><li>Completed: 2744</li><li>NEVER: 2.6</li><li>RARELY: 10.2</li><li>SOMETIMES: 9.9</li><li>FREQUENTLY: 28.999999999999996</li><li>ALWAYS: 48.3</li><li>Population Count:  21,060 </li><li>Cases Per 1000: 64.33998100664768</li><li>One Dose Per 1000: 242.9724596391263</li></ul>'
+        });
+        
+        info_marker_22.addListener('click', function() {
+            info_window_22.open(map, info_marker_22);
+        });
+
+        var info_marker_23 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.665628, -93.338892),
+            title: "FREEBORN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_23 = new google.maps.InfoWindow({
+            content: '<ul><li>County: FREEBORN</li><li>Total Cases: 2736</li><li>Total Deaths: 23</li><li>ccvi: 0.22922636100000002</li><li>socioeconomic: 0.23814072</li><li>minority_language: 0.643107291</li><li>household_transportation: 0.34097421200000005</li><li>epidemiological: 0.147086915</li><li>healthcare: 0.15440942400000002</li><li>highrisk: 0.620821394</li><li>population: 0.488697867</li><li>One Dose: 5029</li><li>Completed: 1900</li><li>NEVER: 13.5</li><li>RARELY: 8.5</li><li>SOMETIMES: 20.6</li><li>FREQUENTLY: 28.300000000000004</li><li>ALWAYS: 29.100000000000005</li><li>Population Count:  30,364 </li><li>Cases Per 1000: 90.10670530891845</li><li>One Dose Per 1000: 165.62376498485048</li></ul>'
+        });
+        
+        info_marker_23.addListener('click', function() {
+            info_window_23.open(map, info_marker_23);
+        });
+
+        var info_marker_24 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.443025, -92.698387),
+            title: "GOODHUE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_24 = new google.maps.InfoWindow({
+            content: '<ul><li>County: GOODHUE</li><li>Total Cases: 3797</li><li>Total Deaths: 66</li><li>ccvi: 0.194205667</li><li>socioeconomic: 0.09805794300000001</li><li>minority_language: 0.382680675</li><li>household_transportation: 0.17924228</li><li>epidemiological: 0.11556829</li><li>healthcare: 0.45304043299999996</li><li>highrisk: 0.64756447</li><li>population: 0.592804839</li><li>One Dose: 8273</li><li>Completed: 3886</li><li>NEVER: 3.0</li><li>RARELY: 3.9</li><li>SOMETIMES: 13.8</li><li>FREQUENTLY: 28.000000000000004</li><li>ALWAYS: 51.300000000000004</li><li>Population Count:  46,449 </li><li>Cases Per 1000: 81.74557041055782</li><li>One Dose Per 1000: 178.10932420504207</li></ul>'
+        });
+        
+        info_marker_24.addListener('click', function() {
+            info_window_24.open(map, info_marker_24);
+        });
+
+        var info_marker_25 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.972932, -96.047136),
+            title: "GRANT",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_25 = new google.maps.InfoWindow({
+            content: '<ul><li>County: GRANT</li><li>Total Cases: 480</li><li>Total Deaths: 8</li><li>ccvi: 0.034702324</li><li>socioeconomic: 0.11238459099999999</li><li>minority_language: 0.096466094</li><li>household_transportation: 0.130213308</li><li>epidemiological: 0.36739891799999996</li><li>healthcare: 0.465775231</li><li>highrisk: 0.11779688</li><li>population: 0.19038522800000002</li><li>One Dose: 1352</li><li>Completed: 757</li><li>NEVER: 11.0</li><li>RARELY: 13.699999999999998</li><li>SOMETIMES: 19.3</li><li>FREQUENTLY: 16.5</li><li>ALWAYS: 39.6</li><li>Population Count:  5,967 </li><li>Cases Per 1000: 80.44243338360987</li><li>One Dose Per 1000: 226.57952069716774</li></ul>'
+        });
+        
+        info_marker_25.addListener('click', function() {
+            info_window_25.open(map, info_marker_25);
+        });
+
+        var info_marker_26 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.020891, -93.509457),
+            title: "HENNEPIN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_26 = new google.maps.InfoWindow({
+            content: '<ul><li>County: HENNEPIN</li><li>Total Cases: 98828</li><li>Total Deaths: 1576</li><li>ccvi: 0.402101242</li><li>socioeconomic: 0.19229544699999998</li><li>minority_language: 0.841770137</li><li>household_transportation: 0.344794651</li><li>epidemiological: 0.05635148</li><li>healthcare: 0.430117797</li><li>highrisk: 0.39796243200000003</li><li>population: 0.981852913</li><li>One Dose: 193664</li><li>Completed: 98677</li><li>NEVER: 2.1</li><li>RARELY: 4.4</li><li>SOMETIMES: 9.6</li><li>FREQUENTLY: 24.3</li><li>ALWAYS: 59.599999999999994</li><li>Population Count:  1,279,981 </li><li>Cases Per 1000: 77.2105210936725</li><li>One Dose Per 1000: 151.30224589271245</li></ul>'
+        });
+        
+        info_marker_26.addListener('click', function() {
+            info_window_26.open(map, info_marker_26);
+        });
+
+        var info_marker_27 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.705165, -91.443469),
+            title: "HOUSTON",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_27 = new google.maps.InfoWindow({
+            content: '<ul><li>County: HOUSTON</li><li>Total Cases: 1552</li><li>Total Deaths: 14</li><li>ccvi: 0.018783827</li><li>socioeconomic: 0.005412289</li><li>minority_language: 0.110474371</li><li>household_transportation: 0.029926775</li><li>epidemiological: 0.13626233699999998</li><li>healthcare: 0.281439032</li><li>highrisk: 0.251512257</li><li>population: 0.41706462899999996</li><li>One Dose: 4686</li><li>Completed: 2240</li><li>NEVER: 7.200000000000001</li><li>RARELY: 8.0</li><li>SOMETIMES: 8.6</li><li>FREQUENTLY: 28.300000000000004</li><li>ALWAYS: 47.8</li><li>Population Count:  18,626 </li><li>Cases Per 1000: 83.32438526790507</li><li>One Dose Per 1000: 251.58380758080102</li></ul>'
+        });
+        
+        info_marker_27.addListener('click', function() {
+            info_window_27.open(map, info_marker_27);
+        });
+
+        var info_marker_28 = new google.maps.Marker({
+            position: new google.maps.LatLng(47.186053, -94.941142),
+            title: "HUBBARD",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_28 = new google.maps.InfoWindow({
+            content: '<ul><li>County: HUBBARD</li><li>Total Cases: 1589</li><li>Total Deaths: 39</li><li>ccvi: 0.090098695</li><li>socioeconomic: 0.088506845</li><li>minority_language: 0.247691818</li><li>household_transportation: 0.374721426</li><li>epidemiological: 0.305316778</li><li>healthcare: 0.329194524</li><li>highrisk: 0.278573703</li><li>population: 0.311047437</li><li>One Dose: 3451</li><li>Completed: 1489</li><li>NEVER: 7.8</li><li>RARELY: 15.0</li><li>SOMETIMES: 16.4</li><li>FREQUENTLY: 22.7</li><li>ALWAYS: 38.0</li><li>Population Count:  21,494 </li><li>Cases Per 1000: 73.92760770447566</li><li>One Dose Per 1000: 160.55643435377314</li></ul>'
+        });
+        
+        info_marker_28.addListener('click', function() {
+            info_window_28.open(map, info_marker_28);
+        });
+
+        var info_marker_29 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.630138, -93.253733),
+            title: "ISANTI",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_29 = new google.maps.InfoWindow({
+            content: '<ul><li>County: ISANTI</li><li>Total Cases: 3011</li><li>Total Deaths: 50</li><li>ccvi: 0.09805794300000001</li><li>socioeconomic: 0.10697230199999999</li><li>minority_language: 0.09773957300000001</li><li>household_transportation: 0.251830627</li><li>epidemiological: 0.06813116799999999</li><li>healthcare: 0.653295129</li><li>highrisk: 0.146768545</li><li>population: 0.692773002</li><li>One Dose: 4287</li><li>Completed: 1701</li><li>NEVER: 10.4</li><li>RARELY: 9.9</li><li>SOMETIMES: 21.5</li><li>FREQUENTLY: 14.000000000000002</li><li>ALWAYS: 44.2</li><li>Population Count:  40,566 </li><li>Cases Per 1000: 74.22472020904206</li><li>One Dose Per 1000: 105.67963319035645</li></ul>'
+        });
+        
+        info_marker_29.addListener('click', function() {
+            info_window_29.open(map, info_marker_29);
+        });
+
+        var info_marker_30 = new google.maps.Marker({
+            position: new google.maps.LatLng(47.550792, -93.568365),
+            title: "ITASCA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_30 = new google.maps.InfoWindow({
+            content: '<ul><li>County: ITASCA</li><li>Total Cases: 3032</li><li>Total Deaths: 45</li><li>ccvi: 0.140719516</li><li>socioeconomic: 0.199617956</li><li>minority_language: 0.191977077</li><li>household_transportation: 0.626870423</li><li>epidemiological: 0.22986310100000001</li><li>healthcare: 0.303724928</li><li>highrisk: 0.439987265</li><li>population: 0.253740847</li><li>One Dose: 9215</li><li>Completed: 4604</li><li>NEVER: 16.2</li><li>RARELY: 14.2</li><li>SOMETIMES: 15.1</li><li>FREQUENTLY: 20.9</li><li>ALWAYS: 33.6</li><li>Population Count:  45,203 </li><li>Cases Per 1000: 67.07519412428378</li><li>One Dose Per 1000: 203.8581510076765</li></ul>'
+        });
+        
+        info_marker_30.addListener('click', function() {
+            info_window_30.open(map, info_marker_30);
+        });
+
+        var info_marker_31 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.598799, -95.143207),
+            title: "JACKSON",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_31 = new google.maps.InfoWindow({
+            content: '<ul><li>County: JACKSON</li><li>Total Cases: 914</li><li>Total Deaths: 10</li><li>ccvi: 0.025469596</li><li>socioeconomic: 0.030563515</li><li>minority_language: 0.340019102</li><li>household_transportation: 0.009551098000000001</li><li>epidemiological: 0.285259472</li><li>healthcare: 0.304680038</li><li>highrisk: 0.15727475300000002</li><li>population: 0.226679401</li><li>One Dose: 1735</li><li>Completed: 701</li><li>NEVER: 32.5</li><li>RARELY: 2.4</li><li>SOMETIMES: 14.000000000000002</li><li>FREQUENTLY: 17.1</li><li>ALWAYS: 34.0</li><li>Population Count:  9,858 </li><li>Cases Per 1000: 92.71657537025766</li><li>One Dose Per 1000: 175.99918847636437</li></ul>'
+        });
+        
+        info_marker_31.addListener('click', function() {
+            info_window_31.open(map, info_marker_31);
+        });
+
+        var info_marker_32 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.932903, -93.288353),
+            title: "KANABEC",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_32 = new google.maps.InfoWindow({
+            content: '<ul><li>County: KANABEC</li><li>Total Cases: 1058</li><li>Total Deaths: 19</li><li>ccvi: 0.073543457</li><li>socioeconomic: 0.127666348</li><li>minority_language: 0.06749442900000001</li><li>household_transportation: 0.581980261</li><li>epidemiological: 0.17701369</li><li>healthcare: 0.314867876</li><li>highrisk: 0.145176695</li><li>population: 0.390958294</li><li>One Dose: 2283</li><li>Completed: 1229</li><li>NEVER: 22.3</li><li>RARELY: 14.800000000000002</li><li>SOMETIMES: 13.699999999999998</li><li>FREQUENTLY: 14.6</li><li>ALWAYS: 34.6</li><li>Population Count:  16,310 </li><li>Cases Per 1000: 64.86817903126916</li><li>One Dose Per 1000: 139.97547516860823</li></ul>'
+        });
+        
+        info_marker_32.addListener('click', function() {
+            info_window_32.open(map, info_marker_32);
+        });
+
+        var info_marker_33 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.114455, -95.015584),
+            title: "KANDIYOHI",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_33 = new google.maps.InfoWindow({
+            content: '<ul><li>County: KANDIYOHI</li><li>Total Cases: 5735</li><li>Total Deaths: 74</li><li>ccvi: 0.35434575</li><li>socioeconomic: 0.18210760899999998</li><li>minority_language: 0.742120344</li><li>household_transportation: 0.446354664</li><li>epidemiological: 0.09551098400000001</li><li>healthcare: 0.431072907</li><li>highrisk: 0.610315186</li><li>population: 0.556829035</li><li>One Dose: 7197</li><li>Completed: 4810</li><li>NEVER: 10.9</li><li>RARELY: 10.7</li><li>SOMETIMES: 18.2</li><li>FREQUENTLY: 28.999999999999996</li><li>ALWAYS: 31.2</li><li>Population Count:  43,193 </li><li>Cases Per 1000: 132.7761442826384</li><li>One Dose Per 1000: 166.6242215173755</li></ul>'
+        });
+        
+        info_marker_33.addListener('click', function() {
+            info_window_33.open(map, info_marker_33);
+        });
+
+        var info_marker_34 = new google.maps.Marker({
+            position: new google.maps.LatLng(48.756308, -96.865445),
+            title: "KITTSON",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_34 = new google.maps.InfoWindow({
+            content: '<ul><li>County: KITTSON</li><li>Total Cases: 399</li><li>Total Deaths: 21</li><li>ccvi: 0.062718879</li><li>socioeconomic: 0.067812798</li><li>minority_language: 0.021967526</li><li>household_transportation: 0.346704871</li><li>epidemiological: 0.405284941</li><li>healthcare: 0.340019102</li><li>highrisk: 0.42788920700000005</li><li>population: 0.09551098400000001</li><li>One Dose: 1113</li><li>Completed: 600</li><li>NEVER: 6.800000000000001</li><li>RARELY: 16.8</li><li>SOMETIMES: 22.1</li><li>FREQUENTLY: 25.1</li><li>ALWAYS: 29.2</li><li>Population Count:  4,299 </li><li>Cases Per 1000: 92.8122819260293</li><li>One Dose Per 1000: 258.89741800418705</li></ul>'
+        });
+        
+        info_marker_34.addListener('click', function() {
+            info_window_34.open(map, info_marker_34);
+        });
+
+        var info_marker_35 = new google.maps.Marker({
+            position: new google.maps.LatLng(48.181601, -93.648322),
+            title: "KOOCHICHING",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_35 = new google.maps.InfoWindow({
+            content: '<ul><li>County: KOOCHICHING</li><li>Total Cases: 615</li><li>Total Deaths: 11</li><li>ccvi: 0.17191977100000003</li><li>socioeconomic: 0.383954155</li><li>minority_language: 0.241642789</li><li>household_transportation: 0.628143903</li><li>epidemiological: 0.324737345</li><li>healthcare: 0.373766316</li><li>highrisk: 0.305635148</li><li>population: 0.09805794300000001</li><li>One Dose: 2439</li><li>Completed: 1136</li><li>NEVER: 15.9</li><li>RARELY: 18.3</li><li>SOMETIMES: 8.7</li><li>FREQUENTLY: 25.5</li><li>ALWAYS: 31.6</li><li>Population Count:  12,430 </li><li>Cases Per 1000: 49.47707160096541</li><li>One Dose Per 1000: 196.21882542236523</li></ul>'
+        });
+        
+        info_marker_35.addListener('click', function() {
+            info_window_35.open(map, info_marker_35);
+        });
+
+        var info_marker_36 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.056268, -96.200698),
+            title: "LAC QUI PARLE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_36 = new google.maps.InfoWindow({
+            content: '<ul><li>County: LAC QUI PARLE</li><li>Total Cases: 675</li><li>Total Deaths: 16</li><li>ccvi: 0.066220949</li><li>socioeconomic: 0.017510347</li><li>minority_language: 0.246099968</li><li>household_transportation: 0.185928048</li><li>epidemiological: 0.46864056</li><li>healthcare: 0.26806749399999996</li><li>highrisk: 0.40114613200000004</li><li>population: 0.167462592</li><li>One Dose: 1937</li><li>Completed: 984</li><li>NEVER: 18.4</li><li>RARELY: 9.6</li><li>SOMETIMES: 24.8</li><li>FREQUENTLY: 17.9</li><li>ALWAYS: 29.299999999999997</li><li>Population Count:  6,629 </li><li>Cases Per 1000: 101.82531301855484</li><li>One Dose Per 1000: 292.2009352843566</li></ul>'
+        });
+        
+        info_marker_36.addListener('click', function() {
+            info_window_36.open(map, info_marker_36);
+        });
+
+        var info_marker_37 = new google.maps.Marker({
+            position: new google.maps.LatLng(47.596430, -91.496464),
+            title: "LAKE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_37 = new google.maps.InfoWindow({
+            content: '<ul><li>County: LAKE</li><li>Total Cases: 713</li><li>Total Deaths: 17</li><li>ccvi: 0.09773957300000001</li><li>socioeconomic: 0.062718879</li><li>minority_language: 0.28812480100000004</li><li>household_transportation: 0.24578159800000002</li><li>epidemiological: 0.383317415</li><li>healthcare: 0.24323463899999997</li><li>highrisk: 0.676854505</li><li>population: 0.11716014</li><li>One Dose: 2499</li><li>Completed: 1275</li><li>NEVER: 8.7</li><li>RARELY: 3.3000000000000003</li><li>SOMETIMES: 7.5</li><li>FREQUENTLY: 34.1</li><li>ALWAYS: 46.4</li><li>Population Count:  10,632 </li><li>Cases Per 1000: 67.06170052671182</li><li>One Dose Per 1000: 235.0451467268623</li></ul>'
+        });
+        
+        info_marker_37.addListener('click', function() {
+            info_window_37.open(map, info_marker_37);
+        });
+
+        var info_marker_38 = new google.maps.Marker({
+            position: new google.maps.LatLng(48.694386, -94.926547),
+            title: "LAKE OF THE WOODS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_38 = new google.maps.InfoWindow({
+            content: '<ul><li>County: LAKE OF THE WOODS</li><li>Total Cases: 212</li><li>Total Deaths: 1</li><li>ccvi: 0.026106336</li><li>socioeconomic: 0.007004139</li><li>minority_language: 0.121935689</li><li>household_transportation: 0.36739891799999996</li><li>epidemiological: 0.382999045</li><li>healthcare: 0.29067176100000003</li><li>highrisk: 0.127347978</li><li>population: 0.072269978</li><li>One Dose: 918</li><li>Completed: 420</li><li>NEVER: 9.1</li><li>RARELY: 17.1</li><li>SOMETIMES: 17.6</li><li>FREQUENTLY: 24.9</li><li>ALWAYS: 31.3</li><li>Population Count:  3,798 </li><li>Cases Per 1000: 55.81885202738283</li><li>One Dose Per 1000: 241.70616113744074</li></ul>'
+        });
+        
+        info_marker_38.addListener('click', function() {
+            info_window_38.open(map, info_marker_38);
+        });
+
+        var info_marker_39 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.461555, -93.915144),
+            title: "LE SUEUR",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_39 = new google.maps.InfoWindow({
+            content: '<ul><li>County: LE SUEUR</li><li>Total Cases: 2290</li><li>Total Deaths: 20</li><li>ccvi: 0.134670487</li><li>socioeconomic: 0.05921681</li><li>minority_language: 0.47118752</li><li>household_transportation: 0.098694683</li><li>epidemiological: 0.10983763099999999</li><li>healthcare: 0.64692773</li><li>highrisk: 0.23654887</li><li>population: 0.596625279</li><li>One Dose: 3796</li><li>Completed: 1775</li><li>NEVER: 5.5</li><li>RARELY: 16.8</li><li>SOMETIMES: 14.7</li><li>FREQUENTLY: 25.4</li><li>ALWAYS: 37.7</li><li>Population Count:  28,894 </li><li>Cases Per 1000: 79.25520869384647</li><li>One Dose Per 1000: 131.376756420018</li></ul>'
+        });
+        
+        info_marker_39.addListener('click', function() {
+            info_window_39.open(map, info_marker_39);
+        });
+
+        var info_marker_40 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.450707, -96.322607),
+            title: "LINCOLN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_40 = new google.maps.InfoWindow({
+            content: '<ul><li>County: LINCOLN</li><li>Total Cases: 500</li><li>Total Deaths: 2</li><li>ccvi: 0.014645018000000001</li><li>socioeconomic: 0.047755492000000004</li><li>minority_language: 0.014645018000000001</li><li>household_transportation: 0.09551098400000001</li><li>epidemiological: 0.41579114899999997</li><li>healthcare: 0.16873607100000002</li><li>highrisk: 0.253422477</li><li>population: 0.189111748</li><li>One Dose: 1263</li><li>Completed: 506</li><li>NEVER: 11.0</li><li>RARELY: 7.8</li><li>SOMETIMES: 20.3</li><li>FREQUENTLY: 29.2</li><li>ALWAYS: 31.7</li><li>Population Count:  5,648 </li><li>Cases Per 1000: 88.52691218130312</li><li>One Dose Per 1000: 223.61898016997168</li></ul>'
+        });
+        
+        info_marker_40.addListener('click', function() {
+            info_window_40.open(map, info_marker_40);
+        });
+
+        var info_marker_41 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.398129, -95.898714),
+            title: "LYON",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_41 = new google.maps.InfoWindow({
+            content: '<ul><li>County: LYON</li><li>Total Cases: 3108</li><li>Total Deaths: 43</li><li>ccvi: 0.35339064</li><li>socioeconomic: 0.161731933</li><li>minority_language: 0.64979306</li><li>household_transportation: 0.623049984</li><li>epidemiological: 0.025151226000000002</li><li>healthcare: 0.53104107</li><li>highrisk: 0.636739892</li><li>population: 0.435211716</li><li>One Dose: 4759</li><li>Completed: 2587</li><li>NEVER: 13.4</li><li>RARELY: 7.5</li><li>SOMETIMES: 24.2</li><li>FREQUENTLY: 21.0</li><li>ALWAYS: 33.9</li><li>Population Count:  25,635 </li><li>Cases Per 1000: 121.24049151550615</li><li>One Dose Per 1000: 185.64462648722449</li></ul>'
+        });
+        
+        info_marker_41.addListener('click', function() {
+            info_window_41.open(map, info_marker_41);
+        });
+
+        var info_marker_42 = new google.maps.Marker({
+            position: new google.maps.LatLng(47.381174, -95.797516),
+            title: "MAHNOMEN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_42 = new google.maps.InfoWindow({
+            content: '<ul><li>County: MAHNOMEN</li><li>Total Cases: 431</li><li>Total Deaths: 7</li><li>ccvi: 0.506844954</li><li>socioeconomic: 0.788920726</li><li>minority_language: 0.49283667600000003</li><li>household_transportation: 0.949379179</li><li>epidemiological: 0.443807705</li><li>healthcare: 0.583253741</li><li>highrisk: 0.120980579</li><li>population: 0.181789239</li><li>One Dose: 1991</li><li>Completed: 1298</li><li>NEVER: 7.000000000000001</li><li>RARELY: 27.9</li><li>SOMETIMES: 8.3</li><li>FREQUENTLY: 18.5</li><li>ALWAYS: 38.2</li><li>Population Count:  5,529 </li><li>Cases Per 1000: 77.95261349249412</li><li>One Dose Per 1000: 360.10128413818046</li></ul>'
+        });
+        
+        info_marker_42.addListener('click', function() {
+            info_window_42.open(map, info_marker_42);
+        });
+
+        var info_marker_43 = new google.maps.Marker({
+            position: new google.maps.LatLng(48.365352, -96.674424),
+            title: "MARSHALL",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_43 = new google.maps.InfoWindow({
+            content: '<ul><li>County: MARSHALL</li><li>Total Cases: 756</li><li>Total Deaths: 15</li><li>ccvi: 0.063355619</li><li>socioeconomic: 0.08213944599999999</li><li>minority_language: 0.321553645</li><li>household_transportation: 0.219675263</li><li>epidemiological: 0.259471506</li><li>healthcare: 0.5195797520000001</li><li>highrisk: 0.188793378</li><li>population: 0.120662209</li><li>One Dose: 1824</li><li>Completed: 864</li><li>NEVER: 7.8</li><li>RARELY: 15.2</li><li>SOMETIMES: 22.1</li><li>FREQUENTLY: 23.4</li><li>ALWAYS: 31.5</li><li>Population Count:  9,342 </li><li>Cases Per 1000: 80.92485549132948</li><li>One Dose Per 1000: 195.24727039177907</li></ul>'
+        });
+        
+        info_marker_43.addListener('click', function() {
+            info_window_43.open(map, info_marker_43);
+        });
+
+        var info_marker_44 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.626681, -94.479976),
+            title: "MARTIN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_44 = new google.maps.InfoWindow({
+            content: '<ul><li>County: MARTIN</li><li>Total Cases: 1848</li><li>Total Deaths: 27</li><li>ccvi: 0.069404648</li><li>socioeconomic: 0.19165870699999998</li><li>minority_language: 0.205666985</li><li>household_transportation: 0.23400191</li><li>epidemiological: 0.23368354</li><li>healthcare: 0.282394142</li><li>highrisk: 0.255969436</li><li>population: 0.366443808</li><li>One Dose: 3591</li><li>Completed: 1429</li><li>NEVER: 18.0</li><li>RARELY: 11.5</li><li>SOMETIMES: 13.4</li><li>FREQUENTLY: 20.5</li><li>ALWAYS: 36.6</li><li>Population Count:  19,752 </li><li>Cases Per 1000: 93.56014580801944</li><li>One Dose Per 1000: 181.80437424058323</li></ul>'
+        });
+        
+        info_marker_44.addListener('click', function() {
+            info_window_44.open(map, info_marker_44);
+        });
+
+        var info_marker_45 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.844002, -94.315422),
+            title: "MCLEOD",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_45 = new google.maps.InfoWindow({
+            content: '<ul><li>County: MCLEOD</li><li>Total Cases: 3350</li><li>Total Deaths: 49</li><li>ccvi: 0.14199299599999998</li><li>socioeconomic: 0.044571792</li><li>minority_language: 0.423750398</li><li>household_transportation: 0.124482649</li><li>epidemiological: 0.092964024</li><li>healthcare: 0.342566062</li><li>highrisk: 0.579751671</li><li>population: 0.641833811</li><li>One Dose: 5858</li><li>Completed: 2707</li><li>NEVER: 6.1</li><li>RARELY: 17.6</li><li>SOMETIMES: 19.3</li><li>FREQUENTLY: 38.3</li><li>ALWAYS: 18.6</li><li>Population Count:  35,963 </li><li>Cases Per 1000: 93.15129438589662</li><li>One Dose Per 1000: 162.88963657092012</li></ul>'
+        });
+        
+        info_marker_45.addListener('click', function() {
+            info_window_45.open(map, info_marker_45);
+        });
+
+        var info_marker_46 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.135318, -94.515054),
+            title: "MEEKER",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_46 = new google.maps.InfoWindow({
+            content: '<ul><li>County: MEEKER</li><li>Total Cases: 2045</li><li>Total Deaths: 34</li><li>ccvi: 0.21840178300000002</li><li>socioeconomic: 0.042661573</li><li>minority_language: 0.36421521799999995</li><li>household_transportation: 0.324100605</li><li>epidemiological: 0.164597262</li><li>healthcare: 0.620503025</li><li>highrisk: 0.614135626</li><li>population: 0.452085323</li><li>One Dose: 3644</li><li>Completed: 1685</li><li>NEVER: 7.200000000000001</li><li>RARELY: 14.400000000000002</li><li>SOMETIMES: 9.4</li><li>FREQUENTLY: 32.3</li><li>ALWAYS: 36.7</li><li>Population Count:  23,256 </li><li>Cases Per 1000: 87.9342965256278</li><li>One Dose Per 1000: 156.6907464740282</li></ul>'
+        });
+        
+        info_marker_46.addListener('click', function() {
+            info_window_46.open(map, info_marker_46);
+        });
+
+        var info_marker_47 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.922840, -93.621874),
+            title: "MILLE LACS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_47 = new google.maps.InfoWindow({
+            content: '<ul><li>County: MILLE LACS</li><li>Total Cases: 2231</li><li>Total Deaths: 46</li><li>ccvi: 0.47596306899999996</li><li>socioeconomic: 0.300222859</li><li>minority_language: 0.24036930899999998</li><li>household_transportation: 0.866284623</li><li>epidemiological: 0.151544094</li><li>healthcare: 0.666666667</li><li>highrisk: 0.758357211</li><li>population: 0.501432665</li><li>One Dose: 4294</li><li>Completed: 2229</li><li>NEVER: 22.4</li><li>RARELY: 12.2</li><li>SOMETIMES: 15.9</li><li>FREQUENTLY: 14.6</li><li>ALWAYS: 34.9</li><li>Population Count:  26,227 </li><li>Cases Per 1000: 85.06500934151828</li><li>One Dose Per 1000: 163.72440614633774</li></ul>'
+        });
+        
+        info_marker_47.addListener('click', function() {
+            info_window_47.open(map, info_marker_47);
+        });
+
+        var info_marker_48 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.984648, -94.052545),
+            title: "MORRISON",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_48 = new google.maps.InfoWindow({
+            content: '<ul><li>County: MORRISON</li><li>Total Cases: 3199</li><li>Total Deaths: 46</li><li>ccvi: 0.142948106</li><li>socioeconomic: 0.170009551</li><li>minority_language: 0.194842407</li><li>household_transportation: 0.40464820100000004</li><li>epidemiological: 0.136580707</li><li>healthcare: 0.567653613</li><li>highrisk: 0.401782872</li><li>population: 0.377268386</li><li>One Dose: 5109</li><li>Completed: 2986</li><li>NEVER: 14.000000000000002</li><li>RARELY: 12.6</li><li>SOMETIMES: 12.1</li><li>FREQUENTLY: 24.0</li><li>ALWAYS: 37.3</li><li>Population Count:  33,368 </li><li>Cases Per 1000: 95.87029489331096</li><li>One Dose Per 1000: 153.1107648046032</li></ul>'
+        });
+        
+        info_marker_48.addListener('click', function() {
+            info_window_48.open(map, info_marker_48);
+        });
+
+        var info_marker_49 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.682499, -92.698387),
+            title: "MOWER",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_49 = new google.maps.InfoWindow({
+            content: '<ul><li>County: MOWER</li><li>Total Cases: 3965</li><li>Total Deaths: 31</li><li>ccvi: 0.443489335</li><li>socioeconomic: 0.36835402700000003</li><li>minority_language: 0.801018784</li><li>household_transportation: 0.616045845</li><li>epidemiological: 0.11811525</li><li>healthcare: 0.624641834</li><li>highrisk: 0.279528812</li><li>population: 0.567653613</li><li>One Dose: 6739</li><li>Completed: 2831</li><li>NEVER: 7.1</li><li>RARELY: 10.7</li><li>SOMETIMES: 11.3</li><li>FREQUENTLY: 26.200000000000003</li><li>ALWAYS: 44.8</li><li>Population Count:  40,124 </li><li>Cases Per 1000: 98.81866214734323</li><li>One Dose Per 1000: 167.95434154122222</li></ul>'
+        });
+        
+        info_marker_49.addListener('click', function() {
+            info_window_49.open(map, info_marker_49);
+        });
+
+        var info_marker_50 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.024340, -95.814288),
+            title: "MURRAY",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_50 = new google.maps.InfoWindow({
+            content: '<ul><li>County: MURRAY</li><li>Total Cases: 935</li><li>Total Deaths: 8</li><li>ccvi: 0.032792104</li><li>socioeconomic: 0.073225088</li><li>minority_language: 0.466730341</li><li>household_transportation: 0.024514486000000002</li><li>epidemiological: 0.426934097</li><li>healthcare: 0.204075135</li><li>highrisk: 0.077045527</li><li>population: 0.19993632600000003</li><li>One Dose: 1820</li><li>Completed: 818</li><li>NEVER: 13.100000000000001</li><li>RARELY: 7.1</li><li>SOMETIMES: 22.4</li><li>FREQUENTLY: 27.0</li><li>ALWAYS: 30.3</li><li>Population Count:  8,222 </li><li>Cases Per 1000: 113.71928971053272</li><li>One Dose Per 1000: 221.35733398199952</li></ul>'
+        });
+        
+        info_marker_50.addListener('click', function() {
+            info_window_50.open(map, info_marker_50);
+        });
+
+        var info_marker_51 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.357286, -94.274363),
+            title: "NICOLLET",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_51 = new google.maps.InfoWindow({
+            content: '<ul><li>County: NICOLLET</li><li>Total Cases: 2467</li><li>Total Deaths: 41</li><li>ccvi: 0.231136581</li><li>socioeconomic: 0.035339063999999996</li><li>minority_language: 0.5138490929999999</li><li>household_transportation: 0.385546004</li><li>epidemiological: 0.024196116</li><li>healthcare: 0.7685450490000001</li><li>highrisk: 0.263291945</li><li>population: 0.64979306</li><li>One Dose: 6084</li><li>Completed: 3285</li><li>NEVER: 6.3</li><li>RARELY: 8.5</li><li>SOMETIMES: 16.4</li><li>FREQUENTLY: 29.600000000000005</li><li>ALWAYS: 39.2</li><li>Population Count:  34,323 </li><li>Cases Per 1000: 71.87600151501908</li><li>One Dose Per 1000: 177.25723275937418</li></ul>'
+        });
+        
+        info_marker_51.addListener('click', function() {
+            info_window_51.open(map, info_marker_51);
+        });
+
+        var info_marker_52 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.719693, -95.814288),
+            title: "NOBLES",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_52 = new google.maps.InfoWindow({
+            content: '<ul><li>County: NOBLES</li><li>Total Cases: 3833</li><li>Total Deaths: 47</li><li>ccvi: 0.41260745</li><li>socioeconomic: 0.5218083410000001</li><li>minority_language: 0.932505571</li><li>household_transportation: 0.682903534</li><li>epidemiological: 0.074816937</li><li>healthcare: 0.448583254</li><li>highrisk: 0.229544731</li><li>population: 0.389684814</li><li>One Dose: 3511</li><li>Completed: 1405</li><li>NEVER: 24.4</li><li>RARELY: 7.8</li><li>SOMETIMES: 18.0</li><li>FREQUENTLY: 21.5</li><li>ALWAYS: 28.4</li><li>Population Count:  21,976 </li><li>Cases Per 1000: 174.41754641427013</li><li>One Dose Per 1000: 159.76519839825266</li></ul>'
+        });
+        
+        info_marker_52.addListener('click', function() {
+            info_window_52.open(map, info_marker_52);
+        });
+
+        var info_marker_53 = new google.maps.Marker({
+            position: new google.maps.LatLng(47.341681, -96.531309),
+            title: "NORMAN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_53 = new google.maps.InfoWindow({
+            content: '<ul><li>County: NORMAN</li><li>Total Cases: 436</li><li>Total Deaths: 8</li><li>ccvi: 0.19993632600000003</li><li>socioeconomic: 0.098376313</li><li>minority_language: 0.504297994</li><li>household_transportation: 0.505571474</li><li>epidemiological: 0.328239414</li><li>healthcare: 0.374721426</li><li>highrisk: 0.535816619</li><li>population: 0.148997135</li><li>One Dose: 1832</li><li>Completed: 848</li><li>NEVER: 12.2</li><li>RARELY: 15.4</li><li>SOMETIMES: 10.9</li><li>FREQUENTLY: 18.6</li><li>ALWAYS: 42.8</li><li>Population Count:  6,367 </li><li>Cases Per 1000: 68.47809015234805</li><li>One Dose Per 1000: 287.733626511701</li></ul>'
+        });
+        
+        info_marker_53.addListener('click', function() {
+            info_window_53.open(map, info_marker_53);
+        });
+
+        var info_marker_54 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.995179, -92.381362),
+            title: "OLMSTED",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_54 = new google.maps.InfoWindow({
+            content: '<ul><li>County: OLMSTED</li><li>Total Cases: 11581</li><li>Total Deaths: 87</li><li>ccvi: 0.194205667</li><li>socioeconomic: 0.073861827</li><li>minority_language: 0.719834448</li><li>household_transportation: 0.36899076700000005</li><li>epidemiological: 0.072588348</li><li>healthcare: 0.162368672</li><li>highrisk: 0.22795288100000002</li><li>population: 0.843361987</li><li>One Dose: 43253</li><li>Completed: 31389</li><li>NEVER: 2.3</li><li>RARELY: 10.1</li><li>SOMETIMES: 5.7</li><li>FREQUENTLY: 33.3</li><li>ALWAYS: 48.5</li><li>Population Count:  160,431 </li><li>Cases Per 1000: 72.1867968160767</li><li>One Dose Per 1000: 269.60500152713627</li></ul>'
+        });
+        
+        info_marker_54.addListener('click', function() {
+            info_window_54.open(map, info_marker_54);
+        });
+
+        var info_marker_55 = new google.maps.Marker({
+            position: new google.maps.LatLng(46.518944, -95.893598),
+            title: "OTTER TAIL",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_55 = new google.maps.InfoWindow({
+            content: '<ul><li>County: OTTER TAIL</li><li>Total Cases: 4753</li><li>Total Deaths: 70</li><li>ccvi: 0.156319643</li><li>socioeconomic: 0.064310729</li><li>minority_language: 0.388092964</li><li>household_transportation: 0.30054122899999997</li><li>epidemiological: 0.21553645300000002</li><li>healthcare: 0.36103151899999997</li><li>highrisk: 0.6042661570000001</li><li>population: 0.379496975</li><li>One Dose: 11713</li><li>Completed: 6537</li><li>NEVER: 7.8</li><li>RARELY: 18.2</li><li>SOMETIMES: 27.800000000000004</li><li>FREQUENTLY: 17.0</li><li>ALWAYS: 29.100000000000005</li><li>Population Count:  58,734 </li><li>Cases Per 1000: 80.92416658153711</li><li>One Dose Per 1000: 199.42452412571933</li></ul>'
+        });
+        
+        info_marker_55.addListener('click', function() {
+            info_window_55.open(map, info_marker_55);
+        });
+
+        var info_marker_56 = new google.maps.Marker({
+            position: new google.maps.LatLng(48.039180, -96.075015),
+            title: "PENNINGTON",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_56 = new google.maps.InfoWindow({
+            content: '<ul><li>County: PENNINGTON</li><li>Total Cases: 1202</li><li>Total Deaths: 16</li><li>ccvi: 0.140401146</li><li>socioeconomic: 0.037886024</li><li>minority_language: 0.290353391</li><li>household_transportation: 0.633237822</li><li>epidemiological: 0.134352117</li><li>healthcare: 0.53231455</li><li>highrisk: 0.29894937899999996</li><li>population: 0.316778096</li><li>One Dose: 2571</li><li>Completed: 1589</li><li>NEVER: 8.1</li><li>RARELY: 19.7</li><li>SOMETIMES: 21.1</li><li>FREQUENTLY: 20.5</li><li>ALWAYS: 30.599999999999998</li><li>Population Count:  14,355 </li><li>Cases Per 1000: 83.73389063044236</li><li>One Dose Per 1000: 179.10135841170325</li></ul>'
+        });
+        
+        info_marker_56.addListener('click', function() {
+            info_window_56.open(map, info_marker_56);
+        });
+
+        var info_marker_57 = new google.maps.Marker({
+            position: new google.maps.LatLng(46.098309, -92.807071),
+            title: "PINE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_57 = new google.maps.InfoWindow({
+            content: '<ul><li>County: PINE</li><li>Total Cases: 2779</li><li>Total Deaths: 16</li><li>ccvi: 0.22986310100000001</li><li>socioeconomic: 0.23718561</li><li>minority_language: 0.310092327</li><li>household_transportation: 0.725883477</li><li>epidemiological: 0.184654569</li><li>healthcare: 0.678764725</li><li>highrisk: 0.208532315</li><li>population: 0.29067176100000003</li><li>One Dose: 4176</li><li>Completed: 1989</li><li>NEVER: 17.8</li><li>RARELY: 14.3</li><li>SOMETIMES: 7.400000000000001</li><li>FREQUENTLY: 24.2</li><li>ALWAYS: 36.4</li><li>Population Count:  29,526 </li><li>Cases Per 1000: 94.12043622569938</li><li>One Dose Per 1000: 141.4346677504572</li></ul>'
+        });
+        
+        info_marker_57.addListener('click', function() {
+            info_window_57.open(map, info_marker_57);
+        });
+
+        var info_marker_58 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.997335, -96.322607),
+            title: "PIPESTONE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_58 = new google.maps.InfoWindow({
+            content: '<ul><li>County: PIPESTONE</li><li>Total Cases: 1002</li><li>Total Deaths: 24</li><li>ccvi: 0.216809933</li><li>socioeconomic: 0.23400191</li><li>minority_language: 0.687360713</li><li>household_transportation: 0.418974849</li><li>epidemiological: 0.29067176100000003</li><li>healthcare: 0.25851639600000004</li><li>highrisk: 0.406876791</li><li>population: 0.280802292</li><li>One Dose: 1792</li><li>Completed: 664</li><li>NEVER: 8.8</li><li>RARELY: 18.2</li><li>SOMETIMES: 13.200000000000001</li><li>FREQUENTLY: 28.1</li><li>ALWAYS: 31.7</li><li>Population Count:  9,132 </li><li>Cases Per 1000: 109.72404730617609</li><li>One Dose Per 1000: 196.2330267192291</li></ul>'
+        });
+        
+        info_marker_58.addListener('click', function() {
+            info_window_58.open(map, info_marker_58);
+        });
+
+        var info_marker_59 = new google.maps.Marker({
+            position: new google.maps.LatLng(47.663508, -96.417053),
+            title: "POLK",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_59 = new google.maps.InfoWindow({
+            content: '<ul><li>County: POLK</li><li>Total Cases: 3385</li><li>Total Deaths: 62</li><li>ccvi: 0.266157275</li><li>socioeconomic: 0.10092327300000001</li><li>minority_language: 0.440942375</li><li>household_transportation: 0.559375995</li><li>epidemiological: 0.080547596</li><li>healthcare: 0.37631327600000003</li><li>highrisk: 0.956383317</li><li>population: 0.244189748</li><li>One Dose: 6656</li><li>Completed: 3483</li><li>NEVER: 10.4</li><li>RARELY: 20.8</li><li>SOMETIMES: 19.7</li><li>FREQUENTLY: 19.6</li><li>ALWAYS: 29.5</li><li>Population Count:  31,524 </li><li>Cases Per 1000: 107.3785052658292</li><li>One Dose Per 1000: 211.1407181829717</li></ul>'
+        });
+        
+        info_marker_59.addListener('click', function() {
+            info_window_59.open(map, info_marker_59);
+        });
+
+        var info_marker_60 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.547226, -95.436372),
+            title: "POPE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_60 = new google.maps.InfoWindow({
+            content: '<ul><li>County: POPE</li><li>Total Cases: 785</li><li>Total Deaths: 5</li><li>ccvi: 0.038522763</li><li>socioeconomic: 0.021012416000000003</li><li>minority_language: 0.072906718</li><li>household_transportation: 0.065902579</li><li>epidemiological: 0.299904489</li><li>healthcare: 0.36899076700000005</li><li>highrisk: 0.428525947</li><li>population: 0.247691818</li><li>One Dose: 2508</li><li>Completed: 1309</li><li>NEVER: 13.900000000000002</li><li>RARELY: 14.7</li><li>SOMETIMES: 10.3</li><li>FREQUENTLY: 21.6</li><li>ALWAYS: 39.5</li><li>Population Count:  11,139 </li><li>Cases Per 1000: 70.473112487656</li><li>One Dose Per 1000: 225.15486129814167</li></ul>'
+        });
+        
+        info_marker_60.addListener('click', function() {
+            info_window_60.open(map, info_marker_60);
+        });
+
+        var info_marker_61 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.996399, -93.061598),
+            title: "RAMSEY",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_61 = new google.maps.InfoWindow({
+            content: '<ul><li>County: RAMSEY</li><li>Total Cases: 42376</li><li>Total Deaths: 790</li><li>ccvi: 0.622731614</li><li>socioeconomic: 0.40305635100000003</li><li>minority_language: 0.901305317</li><li>household_transportation: 0.699458771</li><li>epidemiological: 0.05698822</li><li>healthcare: 0.48997134700000006</li><li>highrisk: 0.39127666299999997</li><li>population: 0.990767272</li><li>One Dose: 82925</li><li>Completed: 40807</li><li>NEVER: 4.4</li><li>RARELY: 4.6</li><li>SOMETIMES: 8.6</li><li>FREQUENTLY: 25.900000000000002</li><li>ALWAYS: 56.39999999999999</li><li>Population Count:  558,248 </li><li>Cases Per 1000: 75.90891503417836</li><li>One Dose Per 1000: 148.54509107063527</li></ul>'
+        });
+        
+        info_marker_61.addListener('click', function() {
+            info_window_61.open(map, info_marker_61);
+        });
+
+        var info_marker_62 = new google.maps.Marker({
+            position: new google.maps.LatLng(47.877034, -96.134564),
+            title: "RED LAKE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_62 = new google.maps.InfoWindow({
+            content: '<ul><li>County: RED LAKE</li><li>Total Cases: 344</li><li>Total Deaths: 4</li><li>ccvi: 0.048392232</li><li>socioeconomic: 0.029608405</li><li>minority_language: 0.18433619899999998</li><li>household_transportation: 0.297357529</li><li>epidemiological: 0.212034384</li><li>healthcare: 0.6472460999999999</li><li>highrisk: 0.055714741</li><li>population: 0.17191977100000003</li><li>One Dose: 924</li><li>Completed: 451</li><li>NEVER: 9.5</li><li>RARELY: 24.1</li><li>SOMETIMES: 19.4</li><li>FREQUENTLY: 18.4</li><li>ALWAYS: 28.6</li><li>Population Count:  4,030 </li><li>Cases Per 1000: 85.35980148883375</li><li>One Dose Per 1000: 229.2803970223325</li></ul>'
+        });
+        
+        info_marker_62.addListener('click', function() {
+            info_window_62.open(map, info_marker_62);
+        });
+
+        var info_marker_63 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.351611, -95.310250),
+            title: "REDWOOD",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_63 = new google.maps.InfoWindow({
+            content: '<ul><li>County: REDWOOD</li><li>Total Cases: 1451</li><li>Total Deaths: 27</li><li>ccvi: 0.145495065</li><li>socioeconomic: 0.087551735</li><li>minority_language: 0.266475645</li><li>household_transportation: 0.250557147</li><li>epidemiological: 0.286851321</li><li>healthcare: 0.385546004</li><li>highrisk: 0.7319325059999999</li><li>population: 0.257879656</li><li>One Dose: 2853</li><li>Completed: 1283</li><li>NEVER: 8.1</li><li>RARELY: 12.3</li><li>SOMETIMES: 24.8</li><li>FREQUENTLY: 25.5</li><li>ALWAYS: 29.299999999999997</li><li>Population Count:  15,204 </li><li>Cases Per 1000: 95.43541173375428</li><li>One Dose Per 1000: 187.64798737174428</li></ul>'
+        });
+        
+        info_marker_63.addListener('click', function() {
+            info_window_63.open(map, info_marker_63);
+        });
+
+        var info_marker_64 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.667444, -94.976654),
+            title: "RENVILLE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_64 = new google.maps.InfoWindow({
+            content: '<ul><li>County: RENVILLE</li><li>Total Cases: 1456</li><li>Total Deaths: 40</li><li>ccvi: 0.193568927</li><li>socioeconomic: 0.200254696</li><li>minority_language: 0.42470550799999995</li><li>household_transportation: 0.158229863</li><li>epidemiological: 0.22476918199999998</li><li>healthcare: 0.43170964700000003</li><li>highrisk: 0.793377905</li><li>population: 0.23272843</li><li>One Dose: 3010</li><li>Completed: 1410</li><li>NEVER: 5.0</li><li>RARELY: 13.600000000000001</li><li>SOMETIMES: 19.3</li><li>FREQUENTLY: 37.4</li><li>ALWAYS: 24.7</li><li>Population Count:  14,588 </li><li>Cases Per 1000: 99.80806142034548</li><li>One Dose Per 1000: 206.33397312859887</li></ul>'
+        });
+        
+        info_marker_64.addListener('click', function() {
+            info_window_64.open(map, info_marker_64);
+        });
+
+        var info_marker_65 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.274999, -93.338892),
+            title: "RICE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_65 = new google.maps.InfoWindow({
+            content: '<ul><li>County: RICE</li><li>Total Cases: 6614</li><li>Total Deaths: 88</li><li>ccvi: 0.40432983100000003</li><li>socioeconomic: 0.12289079900000001</li><li>minority_language: 0.7121935690000001</li><li>household_transportation: 0.45590576200000005</li><li>epidemiological: 0.042979943</li><li>healthcare: 0.7908309459999999</li><li>highrisk: 0.358802929</li><li>population: 0.76727157</li><li>One Dose: 10608</li><li>Completed: 4531</li><li>NEVER: 8.9</li><li>RARELY: 3.8</li><li>SOMETIMES: 11.7</li><li>FREQUENTLY: 30.099999999999998</li><li>ALWAYS: 45.4</li><li>Population Count:  66,853 </li><li>Cases Per 1000: 98.9334809208263</li><li>One Dose Per 1000: 158.67649918477855</li></ul>'
+        });
+        
+        info_marker_65.addListener('click', function() {
+            info_window_65.open(map, info_marker_65);
+        });
+
+        var info_marker_66 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.692700, -96.322607),
+            title: "ROCK",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_66 = new google.maps.InfoWindow({
+            content: '<ul><li>County: ROCK</li><li>Total Cases: 1150</li><li>Total Deaths: 12</li><li>ccvi: 0.035975804</li><li>socioeconomic: 0.05762496</li><li>minority_language: 0.22922636100000002</li><li>household_transportation: 0.173511621</li><li>epidemiological: 0.23400191</li><li>healthcare: 0.321872015</li><li>highrisk: 0.195479147</li><li>population: 0.277300223</li><li>One Dose: 1506</li><li>Completed: 887</li><li>NEVER: 9.5</li><li>RARELY: 22.0</li><li>SOMETIMES: 11.0</li><li>FREQUENTLY: 24.7</li><li>ALWAYS: 32.8</li><li>Population Count:  9,359 </li><li>Cases Per 1000: 122.87637568116251</li><li>One Dose Per 1000: 160.91462763115717</li></ul>'
+        });
+        
+        info_marker_66.addListener('click', function() {
+            info_window_66.open(map, info_marker_66);
+        });
+
+        var info_marker_67 = new google.maps.Marker({
+            position: new google.maps.LatLng(48.724947, -95.982052),
+            title: "ROSEAU",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_67 = new google.maps.InfoWindow({
+            content: '<ul><li>County: ROSEAU</li><li>Total Cases: 1741</li><li>Total Deaths: 17</li><li>ccvi: 0.196115887</li><li>socioeconomic: 0.009869468000000001</li><li>minority_language: 0.384272525</li><li>household_transportation: 0.618274435</li><li>epidemiological: 0.140082776</li><li>healthcare: 0.70455269</li><li>highrisk: 0.448901624</li><li>population: 0.17160140100000001</li><li>One Dose: 2327</li><li>Completed: 1555</li><li>NEVER: 7.7</li><li>RARELY: 15.1</li><li>SOMETIMES: 21.1</li><li>FREQUENTLY: 23.4</li><li>ALWAYS: 32.7</li><li>Population Count:  15,242 </li><li>Cases Per 1000: 114.22385513712112</li><li>One Dose Per 1000: 152.6702532476053</li></ul>'
+        });
+        
+        info_marker_67.addListener('click', function() {
+            info_window_67.open(map, info_marker_67);
+        });
+
+        var info_marker_68 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.683407, -93.540791),
+            title: "SCOTT",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_68 = new google.maps.InfoWindow({
+            content: '<ul><li>County: SCOTT</li><li>Total Cases: 12970</li><li>Total Deaths: 104</li><li>ccvi: 0.2913085</li><li>socioeconomic: 0.031518625</li><li>minority_language: 0.695638332</li><li>household_transportation: 0.138809296</li><li>epidemiological: 0.026743075</li><li>healthcare: 0.8398599170000001</li><li>highrisk: 0.214262974</li><li>population: 0.9019420570000001</li><li>One Dose: 18477</li><li>Completed: 9815</li><li>NEVER: 2.1</li><li>RARELY: 5.7</li><li>SOMETIMES: 12.0</li><li>FREQUENTLY: 31.900000000000002</li><li>ALWAYS: 48.2</li><li>Population Count:  148,458 </li><li>Cases Per 1000: 87.36477656980425</li><li>One Dose Per 1000: 124.45944307480903</li></ul>'
+        });
+        
+        info_marker_68.addListener('click', function() {
+            info_window_68.open(map, info_marker_68);
+        });
+
+        var info_marker_69 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.464461, -93.729898),
+            title: "SHERBURNE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_69 = new google.maps.InfoWindow({
+            content: '<ul><li>County: SHERBURNE</li><li>Total Cases: 8617</li><li>Total Deaths: 73</li><li>ccvi: 0.319961796</li><li>socioeconomic: 0.019102196999999998</li><li>minority_language: 0.305953518</li><li>household_transportation: 0.257242916</li><li>epidemiological: 0.023241006</li><li>healthcare: 0.870423432</li><li>highrisk: 0.6319643429999999</li><li>population: 0.832855778</li><li>One Dose: 9417</li><li>Completed: 4370</li><li>NEVER: 6.4</li><li>RARELY: 17.5</li><li>SOMETIMES: 17.5</li><li>FREQUENTLY: 23.9</li><li>ALWAYS: 34.6</li><li>Population Count:  97,520 </li><li>Cases Per 1000: 88.36136177194422</li><li>One Dose Per 1000: 96.56480721903199</li></ul>'
+        });
+        
+        info_marker_69.addListener('click', function() {
+            info_window_69.open(map, info_marker_69);
+        });
+
+        var info_marker_70 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.550209, -94.151376),
+            title: "SIBLEY",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_70 = new google.maps.InfoWindow({
+            content: '<ul><li>County: SIBLEY</li><li>Total Cases: 1144</li><li>Total Deaths: 9</li><li>ccvi: 0.124801019</li><li>socioeconomic: 0.050302451</li><li>minority_language: 0.634192932</li><li>household_transportation: 0.066220949</li><li>epidemiological: 0.179560649</li><li>healthcare: 0.644062401</li><li>highrisk: 0.23432028</li><li>population: 0.341610952</li><li>One Dose: 2036</li><li>Completed: 847</li><li>NEVER: 4.0</li><li>RARELY: 17.5</li><li>SOMETIMES: 17.2</li><li>FREQUENTLY: 38.0</li><li>ALWAYS: 23.3</li><li>Population Count:  14,899 </li><li>Cases Per 1000: 76.78367675682932</li><li>One Dose Per 1000: 136.65346667561582</li></ul>'
+        });
+        
+        info_marker_70.addListener('click', function() {
+            info_window_70.open(map, info_marker_70);
+        });
+
+        var info_marker_71 = new google.maps.Marker({
+            position: new google.maps.LatLng(47.739511, -92.362392),
+            title: "ST. LOUIS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_71 = new google.maps.InfoWindow({
+            content: '<ul><li>County: ST. LOUIS</li><li>Total Cases: 14563</li><li>Total Deaths: 262</li><li>ccvi: 0.092964024</li><li>socioeconomic: 0.203120025</li><li>minority_language: 0.248328558</li><li>household_transportation: 0.6348296720000001</li><li>epidemiological: 0.085959885</li><li>healthcare: 0.181152499</li><li>highrisk: 0.206940465</li><li>population: 0.404011461</li><li>One Dose: 43795</li><li>Completed: 24873</li><li>NEVER: 9.5</li><li>RARELY: 5.2</li><li>SOMETIMES: 9.8</li><li>FREQUENTLY: 29.7</li><li>ALWAYS: 45.7</li><li>Population Count:  199,661 </li><li>Cases Per 1000: 72.93863097951026</li><li>One Dose Per 1000: 219.3467928138194</li></ul>'
+        });
+        
+        info_marker_71.addListener('click', function() {
+            info_window_71.open(map, info_marker_71);
+        });
+
+        var info_marker_72 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.584479, -94.586560),
+            title: "STEARNS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_72 = new google.maps.InfoWindow({
+            content: '<ul><li>County: STEARNS</li><li>Total Cases: 18577</li><li>Total Deaths: 199</li><li>ccvi: 0.29703916</li><li>socioeconomic: 0.17542184</li><li>minority_language: 0.613180516</li><li>household_transportation: 0.462273161</li><li>epidemiological: 0.015918497</li><li>healthcare: 0.476918179</li><li>highrisk: 0.37185609700000005</li><li>population: 0.7500795920000001</li><li>One Dose: 26189</li><li>Completed: 17941</li><li>NEVER: 8.2</li><li>RARELY: 14.2</li><li>SOMETIMES: 18.7</li><li>FREQUENTLY: 17.4</li><li>ALWAYS: 41.5</li><li>Population Count:  160,211 </li><li>Cases Per 1000: 115.95333653744125</li><li>One Dose Per 1000: 163.46567963498137</li></ul>'
+        });
+        
+        info_marker_72.addListener('click', function() {
+            info_window_72.open(map, info_marker_72);
+        });
+
+        var info_marker_73 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.975852, -93.177966),
+            title: "STEELE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_73 = new google.maps.InfoWindow({
+            content: '<ul><li>County: STEELE</li><li>Total Cases: 2954</li><li>Total Deaths: 11</li><li>ccvi: 0.25310410699999997</li><li>socioeconomic: 0.099331423</li><li>minority_language: 0.48105698799999996</li><li>household_transportation: 0.387137854</li><li>epidemiological: 0.05858007</li><li>healthcare: 0.6396052210000001</li><li>highrisk: 0.37631327600000003</li><li>population: 0.6816300540000001</li><li>One Dose: 5292</li><li>Completed: 2289</li><li>NEVER: 7.400000000000001</li><li>RARELY: 6.2</li><li>SOMETIMES: 14.400000000000002</li><li>FREQUENTLY: 35.4</li><li>ALWAYS: 36.5</li><li>Population Count:  37,112 </li><li>Cases Per 1000: 79.59689588273335</li><li>One Dose Per 1000: 142.59538693683984</li></ul>'
+        });
+        
+        info_marker_73.addListener('click', function() {
+            info_window_73.open(map, info_marker_73);
+        });
+
+        var info_marker_74 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.521512, -95.952218),
+            title: "STEVENS",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_74 = new google.maps.InfoWindow({
+            content: '<ul><li>County: STEVENS</li><li>Total Cases: 734</li><li>Total Deaths: 8</li><li>ccvi: 0.10951926099999999</li><li>socioeconomic: 0.12034384</li><li>minority_language: 0.620821394</li><li>household_transportation: 0.262336835</li><li>epidemiological: 0.081184336</li><li>healthcare: 0.538045209</li><li>highrisk: 0.192932187</li><li>population: 0.25692454600000003</li><li>One Dose: 1745</li><li>Completed: 1051</li><li>NEVER: 16.9</li><li>RARELY: 12.6</li><li>SOMETIMES: 11.7</li><li>FREQUENTLY: 19.2</li><li>ALWAYS: 39.7</li><li>Population Count:  9,766 </li><li>Cases Per 1000: 75.15871390538604</li><li>One Dose Per 1000: 178.68113864427607</li></ul>'
+        });
+        
+        info_marker_74.addListener('click', function() {
+            info_window_74.open(map, info_marker_74);
+        });
+
+        var info_marker_75 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.231565, -95.719604),
+            title: "SWIFT",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_75 = new google.maps.InfoWindow({
+            content: '<ul><li>County: SWIFT</li><li>Total Cases: 870</li><li>Total Deaths: 18</li><li>ccvi: 0.18974848800000002</li><li>socioeconomic: 0.17382999</li><li>minority_language: 0.46036294200000005</li><li>household_transportation: 0.37663164600000004</li><li>epidemiological: 0.302451449</li><li>healthcare: 0.347341611</li><li>highrisk: 0.581025151</li><li>population: 0.20885068399999998</li><li>One Dose: 1978</li><li>Completed: 1068</li><li>NEVER: 17.0</li><li>RARELY: 11.3</li><li>SOMETIMES: 15.2</li><li>FREQUENTLY: 21.2</li><li>ALWAYS: 35.3</li><li>Population Count:  9,367 </li><li>Cases Per 1000: 92.87925696594428</li><li>One Dose Per 1000: 211.16686238923882</li></ul>'
+        });
+        
+        info_marker_75.addListener('click', function() {
+            info_window_75.open(map, info_marker_75);
+        });
+
+        var info_marker_76 = new google.maps.Marker({
+            position: new google.maps.LatLng(46.030773, -94.831549),
+            title: "TODD",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_76 = new google.maps.InfoWindow({
+            content: '<ul><li>County: TODD</li><li>Total Cases: 2401</li><li>Total Deaths: 30</li><li>ccvi: 0.254059217</li><li>socioeconomic: 0.28939828100000003</li><li>minority_language: 0.557147405</li><li>household_transportation: 0.543457498</li><li>epidemiological: 0.23718561</li><li>healthcare: 0.448583254</li><li>highrisk: 0.304680038</li><li>population: 0.347659981</li><li>One Dose: 3429</li><li>Completed: 2294</li><li>NEVER: 9.7</li><li>RARELY: 19.8</li><li>SOMETIMES: 14.6</li><li>FREQUENTLY: 19.6</li><li>ALWAYS: 36.3</li><li>Population Count:  24,665 </li><li>Cases Per 1000: 97.34441516318671</li><li>One Dose Per 1000: 139.0229069531725</li></ul>'
+        });
+        
+        info_marker_76.addListener('click', function() {
+            info_window_76.open(map, info_marker_76);
+        });
+
+        var info_marker_77 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.803026, -96.365147),
+            title: "TRAVERSE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_77 = new google.maps.InfoWindow({
+            content: '<ul><li>County: TRAVERSE</li><li>Total Cases: 299</li><li>Total Deaths: 5</li><li>ccvi: 0.163005412</li><li>socioeconomic: 0.05730659</li><li>minority_language: 0.33747214299999995</li><li>household_transportation: 0.47978350799999997</li><li>epidemiological: 0.525947151</li><li>healthcare: 0.204393505</li><li>highrisk: 0.596625279</li><li>population: 0.12702960800000002</li><li>One Dose: 906</li><li>Completed: 538</li><li>NEVER: 19.6</li><li>RARELY: 13.900000000000002</li><li>SOMETIMES: 16.0</li><li>FREQUENTLY: 11.0</li><li>ALWAYS: 39.5</li><li>Population Count:  3,263 </li><li>Cases Per 1000: 91.63346613545816</li><li>One Dose Per 1000: 277.658596383696</li></ul>'
+        });
+        
+        info_marker_77.addListener('click', function() {
+            info_window_77.open(map, info_marker_77);
+        });
+
+        var info_marker_78 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.302081, -92.223667),
+            title: "WABASHA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_78 = new google.maps.InfoWindow({
+            content: '<ul><li>County: WABASHA</li><li>Total Cases: 1845</li><li>Total Deaths: 3</li><li>ccvi: 0.05985355</li><li>socioeconomic: 0.063037249</li><li>minority_language: 0.283667622</li><li>household_transportation: 0.038522763</li><li>epidemiological: 0.159184973</li><li>healthcare: 0.31614135600000004</li><li>highrisk: 0.338427252</li><li>population: 0.476281439</li><li>One Dose: 5132</li><li>Completed: 2675</li><li>NEVER: 4.1</li><li>RARELY: 8.5</li><li>SOMETIMES: 12.9</li><li>FREQUENTLY: 31.8</li><li>ALWAYS: 42.7</li><li>Population Count:  21,614 </li><li>Cases Per 1000: 85.36133987230498</li><li>One Dose Per 1000: 237.4386971407421</li></ul>'
+        });
+        
+        info_marker_78.addListener('click', function() {
+            info_window_78.open(map, info_marker_78);
+        });
+
+        var info_marker_79 = new google.maps.Marker({
+            position: new google.maps.LatLng(46.641593, -94.936044),
+            title: "WADENA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_79 = new google.maps.InfoWindow({
+            content: '<ul><li>County: WADENA</li><li>Total Cases: 1266</li><li>Total Deaths: 19</li><li>ccvi: 0.335561923</li><li>socioeconomic: 0.240050939</li><li>minority_language: 0.083731296</li><li>household_transportation: 0.930913722</li><li>epidemiological: 0.29576568</li><li>healthcare: 0.285577841</li><li>highrisk: 0.82617001</li><li>population: 0.342884432</li><li>One Dose: 2330</li><li>Completed: 1299</li><li>NEVER: 6.1</li><li>RARELY: 21.1</li><li>SOMETIMES: 15.7</li><li>FREQUENTLY: 20.3</li><li>ALWAYS: 36.7</li><li>Population Count:  13,744 </li><li>Cases Per 1000: 92.11292200232829</li><li>One Dose Per 1000: 169.52852153667055</li></ul>'
+        });
+        
+        info_marker_79.addListener('click', function() {
+            info_window_79.open(map, info_marker_79);
+        });
+
+        var info_marker_80 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.961388, -93.662324),
+            title: "WASECA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_80 = new google.maps.InfoWindow({
+            content: '<ul><li>County: WASECA</li><li>Total Cases: 2044</li><li>Total Deaths: 17</li><li>ccvi: 0.16809933100000002</li><li>socioeconomic: 0.012098058</li><li>minority_language: 0.457815982</li><li>household_transportation: 0.32728430399999997</li><li>epidemiological: 0.09805794300000001</li><li>healthcare: 0.713148679</li><li>highrisk: 0.23782235</li><li>population: 0.497930595</li><li>One Dose: 2988</li><li>Completed: 1358</li><li>NEVER: 7.400000000000001</li><li>RARELY: 4.8</li><li>SOMETIMES: 11.7</li><li>FREQUENTLY: 33.2</li><li>ALWAYS: 42.9</li><li>Population Count:  18,648 </li><li>Cases Per 1000: 109.6096096096096</li><li>One Dose Per 1000: 160.23166023166024</li></ul>'
+        });
+        
+        info_marker_80.addListener('click', function() {
+            info_window_80.open(map, info_marker_80);
+        });
+
+        var info_marker_81 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.889688, -92.857710),
+            title: "WASHINGTON",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_81 = new google.maps.InfoWindow({
+            content: '<ul><li>County: WASHINGTON</li><li>Total Cases: 21622</li><li>Total Deaths: 251</li><li>ccvi: 0.18306271899999998</li><li>socioeconomic: 0.021330786</li><li>minority_language: 0.564469914</li><li>household_transportation: 0.079910856</li><li>epidemiological: 0.022285896</li><li>healthcare: 0.679083095</li><li>highrisk: 0.10474371199999999</li><li>population: 0.9340974209999999</li><li>One Dose: 40126</li><li>Completed: 20192</li><li>NEVER: 4.4</li><li>RARELY: 8.8</li><li>SOMETIMES: 10.3</li><li>FREQUENTLY: 26.200000000000003</li><li>ALWAYS: 50.3</li><li>Population Count:  262,748 </li><li>Cases Per 1000: 82.29177767290331</li><li>One Dose Per 1000: 152.71667148750896</li></ul>'
+        });
+        
+        info_marker_81.addListener('click', function() {
+            info_window_81.open(map, info_marker_81);
+        });
+
+        var info_marker_82 = new google.maps.Marker({
+            position: new google.maps.LatLng(43.932309, -94.479976),
+            title: "WATONWAN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_82 = new google.maps.InfoWindow({
+            content: '<ul><li>County: WATONWAN</li><li>Total Cases: 1127</li><li>Total Deaths: 8</li><li>ccvi: 0.420885068</li><li>socioeconomic: 0.48678764700000005</li><li>minority_language: 0.859280484</li><li>household_transportation: 0.382680675</li><li>epidemiological: 0.23623049999999998</li><li>healthcare: 0.304043298</li><li>highrisk: 0.699140401</li><li>population: 0.340019102</li><li>One Dose: 1913</li><li>Completed: 712</li><li>NEVER: 14.899999999999999</li><li>RARELY: 5.3</li><li>SOMETIMES: 22.5</li><li>FREQUENTLY: 22.1</li><li>ALWAYS: 35.2</li><li>Population Count:  10,923 </li><li>Cases Per 1000: 103.1767829350911</li><li>One Dose Per 1000: 175.1350361622265</li></ul>'
+        });
+        
+        info_marker_82.addListener('click', function() {
+            info_window_82.open(map, info_marker_82);
+        });
+
+        var info_marker_83 = new google.maps.Marker({
+            position: new google.maps.LatLng(46.408740, -96.501847),
+            title: "WILKIN",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_83 = new google.maps.InfoWindow({
+            content: '<ul><li>County: WILKIN</li><li>Total Cases: 659</li><li>Total Deaths: 10</li><li>ccvi: 0.051894301</li><li>socioeconomic: 0.012416428</li><li>minority_language: 0.071633238</li><li>household_transportation: 0.6319643429999999</li><li>epidemiological: 0.223814072</li><li>healthcare: 0.345113021</li><li>highrisk: 0.172874881</li><li>population: 0.162368672</li><li>One Dose: 1156</li><li>Completed: 509</li><li>NEVER: 16.6</li><li>RARELY: 14.800000000000002</li><li>SOMETIMES: 23.9</li><li>FREQUENTLY: 9.6</li><li>ALWAYS: 35.2</li><li>Population Count:  6,226 </li><li>Cases Per 1000: 105.84645036941858</li><li>One Dose Per 1000: 185.6729842595567</li></ul>'
+        });
+        
+        info_marker_83.addListener('click', function() {
+            info_window_83.open(map, info_marker_83);
+        });
+
+        var info_marker_84 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.006499, -91.753882),
+            title: "WINONA",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_84 = new google.maps.InfoWindow({
+            content: '<ul><li>County: WINONA</li><li>Total Cases: 4114</li><li>Total Deaths: 48</li><li>ccvi: 0.212034384</li><li>socioeconomic: 0.159184973</li><li>minority_language: 0.40082776200000003</li><li>household_transportation: 0.267430755</li><li>epidemiological: 0.020375677</li><li>healthcare: 0.546322827</li><li>highrisk: 0.48551416700000005</li><li>population: 0.670487106</li><li>One Dose: 9260</li><li>Completed: 4148</li><li>NEVER: 2.9</li><li>RARELY: 15.1</li><li>SOMETIMES: 5.7</li><li>FREQUENTLY: 32.8</li><li>ALWAYS: 43.5</li><li>Population Count:  50,830 </li><li>Cases Per 1000: 80.93645484949832</li><li>One Dose Per 1000: 182.17588038559907</li></ul>'
+        });
+        
+        info_marker_84.addListener('click', function() {
+            info_window_84.open(map, info_marker_84);
+        });
+
+        var info_marker_85 = new google.maps.Marker({
+            position: new google.maps.LatLng(45.153820, -94.019094),
+            title: "WRIGHT",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_85 = new google.maps.InfoWindow({
+            content: '<ul><li>County: WRIGHT</li><li>Total Cases: 12301</li><li>Total Deaths: 114</li><li>ccvi: 0.17319325100000002</li><li>socioeconomic: 0.016236867</li><li>minority_language: 0.314867876</li><li>household_transportation: 0.113021331</li><li>epidemiological: 0.046163642000000005</li><li>healthcare: 0.8274434890000001</li><li>highrisk: 0.21553645300000002</li><li>population: 0.8268067490000001</li><li>One Dose: 16692</li><li>Completed: 8176</li><li>NEVER: 8.3</li><li>RARELY: 10.9</li><li>SOMETIMES: 16.2</li><li>FREQUENTLY: 25.900000000000002</li><li>ALWAYS: 38.7</li><li>Population Count:  138,531 </li><li>Cases Per 1000: 88.79600955742758</li><li>One Dose Per 1000: 120.49288606882213</li></ul>'
+        });
+        
+        info_marker_85.addListener('click', function() {
+            info_window_85.open(map, info_marker_85);
+        });
+
+        var info_marker_86 = new google.maps.Marker({
+            position: new google.maps.LatLng(44.738045, -95.856486),
+            title: "YELLOW MEDICINE",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        var info_window_86 = new google.maps.InfoWindow({
+            content: '<ul><li>County: YELLOW MEDICINE</li><li>Total Cases: 967</li><li>Total Deaths: 17</li><li>ccvi: 0.143266476</li><li>socioeconomic: 0.16205030199999998</li><li>minority_language: 0.42948105700000005</li><li>household_transportation: 0.475007959</li><li>epidemiological: 0.258198026</li><li>healthcare: 0.297357529</li><li>highrisk: 0.422795288</li><li>population: 0.21235275399999998</li><li>One Dose: 2590</li><li>Completed: 1416</li><li>NEVER: 12.2</li><li>RARELY: 9.6</li><li>SOMETIMES: 25.4</li><li>FREQUENTLY: 20.2</li><li>ALWAYS: 32.6</li><li>Population Count:  9,729 </li><li>Cases Per 1000: 99.39356562853325</li><li>One Dose Per 1000: 266.2144105252338</li></ul>'
+        });
+        
+        info_marker_86.addListener('click', function() {
+            info_window_86.open(map, info_marker_86);
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(46.61854330000001, -93.45366920000001),
+            radius: 8243.856332703213
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.3292832, -93.2197005),
+            radius: 3849.8764642297765
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(46.9164628, -95.7036557),
+            radius: 8041.540020263425
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(48.0370038, -94.82892389999999),
+            radius: 7484.5286537809425
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.7211058, -93.9732855),
+            radius: 3904.3892896442103
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.4932045, -96.4724),
+            radius: 10213.298618065292
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.9505132, -93.9878427),
+            radius: 5505.445955994926
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.2294379, -94.645035),
+            radius: 6515.386759027031
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(46.5619247, -92.6847226),
+            radius: 8613.88618338667
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.82543099999999, -93.7841503),
+            radius: 4965.944821280288
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(47.2144536, -94.2309171),
+            radius: 6310.916179337231
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.0520041, -95.555641),
+            radius: 7443.919716646989
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.524828, -92.9550305),
+            radius: 4848.797979262713
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(46.878186, -96.42575889999999),
+            radius: 5212.800544967565
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(47.72007869999999, -95.3105661),
+            radius: 6707.538601271572
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(47.6051056, -90.49317669999999),
+            radius: 14328.084950567558
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.0488692, -95.3102505),
+            radius: 7960.502853067047
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(46.5957987, -94.1401699),
+            radius: 6113.766583938475
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.731554, -93.17796589999999),
+            radius: 4704.74403533794
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.9842889, -92.8577105),
+            radius: 6775.056104665044
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.9279387, -95.4218815),
+            radius: 7821.428571428571
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.6448766, -93.9878427),
+            radius: 6038.659793814432
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.6956298, -92.0665197),
+            radius: 8504.03608736942
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.6656285, -93.33889169999999),
+            radius: 5796.831774469767
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.4430251, -92.6983868),
+            radius: 6233.826347176472
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.9729315, -96.0471362),
+            radius: 7930.2832244008705
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.0208911, -93.5094574),
+            radius: 5295.578606244936
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.7051652, -91.44346900000001),
+            radius: 8805.433265328036
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(47.1860527, -94.94114230000001),
+            radius: 5619.47520238206
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.6301379, -93.2537327),
+            radius: 3698.787161662476
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(47.5507924, -93.5683651),
+            radius: 7135.035285268677
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.598799, -95.1432068),
+            radius: 6159.971596672753
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.9329034, -93.2883531),
+            radius: 4899.1416309012875
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.11445519999999, -95.0155836),
+            radius: 5831.847753108143
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(48.7563083, -96.865445),
+            radius: 9061.409630146547
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(48.1816012, -93.648322),
+            radius: 6867.658889782783
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.0562676, -96.2006981),
+            radius: 10227.032734952481
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(47.5964304, -91.4964639),
+            radius: 8226.580135440181
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(48.6943855, -94.92654739999999),
+            radius: 8459.715639810425
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.461555, -93.9151438),
+            radius: 4598.18647470063
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.4507066, -96.3226072),
+            radius: 7826.664305949009
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.3981292, -95.89871389999999),
+            radius: 6497.561927052857
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(47.3811737, -95.797516),
+            radius: 12603.544944836316
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(48.36535199999999, -96.674424),
+            radius: 6833.654463712267
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.6266807, -94.479976),
+            radius: 6363.153098420413
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.8440016, -94.315422),
+            radius: 5701.137279982204
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.1353179, -94.5150543),
+            radius: 5484.176126590987
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.9228403, -93.6218744),
+            radius: 5730.354215121821
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.9846475, -94.052545),
+            radius: 5358.8767681611125
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.6824988, -92.6983868),
+            radius: 5878.401953942777
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.0243398, -95.81428849999999),
+            radius: 7747.506689369983
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.3572855, -94.27436279999999),
+            radius: 6204.003146578096
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.71969319999999, -95.81428849999999),
+            radius: 5591.781943938843
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(47.3416805, -96.5313092),
+            radius: 10070.676927909535
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.995179, -92.38136209999999),
+            radius: 9436.17505344977
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(46.51894350000001, -95.8935983),
+            radius: 6979.858344400177
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(48.0391802, -96.075015),
+            radius: 6268.547544409614
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(46.0983087, -92.80707079999999),
+            radius: 4950.2133712660025
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.9973355, -96.3226072),
+            radius: 6868.155935173018
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(47.6635085, -96.4170534),
+            radius: 7389.92513640401
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.5472257, -95.4363717),
+            radius: 7880.420145434959
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.9963986, -93.0615978),
+            radius: 5199.078187472234
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(47.8770338, -96.13456409999999),
+            radius: 8024.813895781637
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.3516109, -95.3102505),
+            radius: 6567.67955801105
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.66744449999999, -94.976654),
+            radius: 7221.689059500961
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.2749995, -93.33889169999999),
+            radius: 5553.677471467249
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.6927003, -96.3226072),
+            radius: 5632.0119670905015
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(48.7249475, -95.9820524),
+            radius: 5343.458863666186
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.6834072, -93.54079089999999),
+            radius: 4356.080507618316
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.4644612, -93.7298983),
+            radius: 3379.7682526661197
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.5502089, -94.15137639999999),
+            radius: 4782.8713336465535
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(47.7395106, -92.3623921),
+            radius: 7677.137748483679
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.5844792, -94.5865603),
+            radius: 5721.298787224348
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.9758523, -93.17796589999999),
+            radius: 4990.8385427893945
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.52151180000001, -95.95221780000001),
+            radius: 6253.839852549662
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.2315651, -95.71960419999999),
+            radius: 7390.840183623359
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(46.0307728, -94.8315488),
+            radius: 4865.801743361038
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.8030256, -96.365147),
+            radius: 9718.050873429362
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.3020812, -92.2236667),
+            radius: 8310.354399925975
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(46.6415934, -94.936044),
+            radius: 5933.498253783469
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.961388, -93.66232389999999),
+            radius: 5608.108108108108
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.8896877, -92.8577105),
+            radius: 5345.083502062814
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(43.9323091, -94.479976),
+            radius: 6129.726265677928
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(46.4087398, -96.5018468),
+            radius: 6498.554449084484
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.006499, -91.7538817),
+            radius: 6376.155813495968
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(45.1538202, -94.01909429999999),
+            radius: 4217.251012408775
+        });
+
+        new google.maps.Circle({
+            strokeColor: '#000000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1,
+            fillColor: '#FFFF00',
+            fillOpacity: 0.5,
+            map: map,
+            center: new google.maps.LatLng(44.7380445, -95.8564864),
+            radius: 9317.504368383183
         });
 
     }
